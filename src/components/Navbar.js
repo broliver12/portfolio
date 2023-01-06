@@ -69,7 +69,6 @@ function Navbar({...props}) {
           <div
             className={click ? "innerItem" : "innerItem active"}
             onClick={() => {
-              window.location.href = '/';
               callback();
               closeMobileMenu();
             }}
