@@ -1,0 +1,30 @@
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: var(--os-text-light);
+}
+
+.btn--primary:hover {
+  color: var(--os-primary-light);
+  transition: all 0.2s ease-out;
+}
+
+.btn--outline {
+  background-color: var(--os-transparent);
+  color: var(--os-primary-light);
+  padding: 8px 20px;
+  border: 1px solid var(--os-primary-light);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn--outline:hover {
+  background-color: var(--os-primary-light-transparent);
+  transition: all 0.3s ease-out;
+}

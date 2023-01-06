@@ -1,0 +1,43 @@
+.jobTileContainer {
+  width: 260px;
+  height: 70px;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-right: 4px;
+  margin: 4px;
+  border-radius: 4px;
+  background-color: #00000000;
+  border: 2px solid var(--os-primary-light-transparent);
+  border-left: 6px solid var(--os-text-dark);
+}
+
+.jobTileContainer:hover {
+  border-left: 6px solid var(--os-element);
+  transition: all 0.2s ease;
+}
+
+.jobTileContainerSelected {
+  background-color: var(--os-primary-light-transparent);
+  border: 2px solid var(--os-primary-light);
+  border-left: 6px solid var(--os-element);
+}
+
+.jobTitle {
+  font-size: 24px;
+  font-family: var(--os-font-main-bold);
+  color: var(--os-text-body);
+}
+
+.companyTitle {
+  font-size: 18px;
+  font-family: var(--os-font-accent);
+  color: var(--os-text-body);
+}
+
+.titleSelected {
+  color: var(--os-element);
+}
+
+.jobTitleSelected {
+  color: var(--os-text-light);
+}

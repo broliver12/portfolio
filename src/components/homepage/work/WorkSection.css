@@ -1,0 +1,277 @@
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 16vh;
+  padding-top: 8vh;
+  padding-right: 200px;
+}
+
+.workTitleBar {
+  font-size: 44px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--os-text-light);
+  text-align: start;
+  white-space: nowrap;
+  padding-top: 8vh;
+  margin-top: 18px;
+}
+
+.workTitleDecoration {
+  width: 735px;
+  height: 1px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  background-color: var(--os-primary-light);
+}
+
+.jobTableContainer {
+  display: flex;
+  margin-left: 16px;
+  padding-top: 16px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.jobInfoContainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--os-primary-light);
+  background-color: #25ddf511;
+  justify-content: flex-start;
+  margin-left: 16px;
+  margin-right: 64px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  min-width: 750px;
+  max-width: 750px;
+}
+
+.chipotleDecoration {
+  background: linear-gradient(to top, #00000033, #00000022),
+    url(../../../images/img/chipotle.png) no-repeat top -200px center;
+  background-size: 1000px;
+}
+
+.gmDecoration {
+  background: linear-gradient(to top, #000000bb, #00000099),
+    url(../../../images/img/gm.png) no-repeat center center;
+  background-size: 1750px;
+}
+
+.kgDecoration {
+  background: linear-gradient(to top, #000000bb, #00000099),
+    url(../../../images/img/kg.png) no-repeat left -300px top -400px;
+  background-size: 2000px;
+}
+
+.jobListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.jobDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  padding-right: 16px;
+}
+
+.jobDates {
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.descLineSpace {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  line-height: 150%;
+  font-size: 20px;
+  font-family: var(--os-font-main-light);
+  color: var(--os-accent);
+}
+
+.dataRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.dataKey {
+  font-size: 22px;
+  color: var(--os-text-light);
+}
+
+.dataValue {
+  font-size: 22px;
+  color: var(--os-accent);
+}
+
+.dataSeparator {
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 22px;
+  color: var(--os-text-light);
+}
+
+.techStackContainer {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 12px;
+  padding-top: 16px;
+  justify-content: start;
+}
+
+.stackItem {
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 4px;
+  text-overflow: ellipsis;
+  background-color: #00000000;
+  border: 1px solid var(--os-accent);
+  padding-top: 6px;
+  margin-bottom: 8px;
+  color: var(--os-text-light);
+}
+
+.skillsHeader {
+  width: 100%;
+  color: var(--os-text-light);
+  text-align: center;
+  font-family: var(--os-font-main-bold);
+  padding-bottom: 16px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .workContainer {
+    padding-left: 164px;
+    padding-right: 0px;
+  }
+
+  .workTitleDecoration {
+    width: 624px;
+  }
+
+  .workTitleBar {
+    padding-right: 32px;
+    margin-left: 196px;
+  }
+
+  .jobInfoContainer {
+    min-width: 675px;
+    max-width: 675px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .workContainer {
+    padding-left: 136px;
+    padding-right: 72px;
+    align-items: center;
+  }
+
+  .workTitleBar {
+    font-size: 40px;
+    margin-left: 0px;
+  }
+
+  .jobTableContainer {
+    flex-direction: column;
+    margin-left: 0px;
+    padding-left: 32px;
+    padding-right: 72px;
+  }
+
+  .workTitleDecoration {
+    width: 735px;
+  }
+
+  .jobListContainer {
+    padding-bottom: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: none;
+    width: none;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+
+  .jobInfoContainer {
+    max-width: none;
+    margin-left: 0px;
+    width: 100%;
+    min-width: none;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .workContainer {
+    padding-left: 96px;
+    padding-right: 0px;
+  }
+
+  .jobTableContainer {
+    padding-left: 32px;
+    width: 100%;
+    min-width: none;
+  }
+
+  .jobInfoContainer {
+    min-width: 200px;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .workTitleBar {
+    font-size: 32px;
+    padding-right: 0px;
+  }
+
+  .jobDates {
+    min-width: none;
+  }
+
+  .jobTableContainer {
+    padding-left: 72px;
+  }
+
+  .jobTableContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .workContainer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

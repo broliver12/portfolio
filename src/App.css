@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--os-font-main);
+}
+
+.root {
+  background-color: var(--os-primary-dark);
+}
+.home {
+  display: flex;
+  align-items: start;
+  min-height: 100vh;
+  justify-content: start;
+  font-size: 3rem;
+}
+
+.loadingContainer {
+  background-color: var(--os-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.loadingIcon {
+  width: 250px;
+  height: 250px;
+  animation:rotate 2.5s linear;
+  animation-timing-function: cubic-bezier(1,0,.5,1);
+}
+  
+@keyframes rotate {
+    from { transform: rotate(0deg); opacity: 100;} 
+    to { transform: rotate(360deg); opacity: 0;} 
+}
+
+@font-face {
+  font-family: "calibre-light";
+  src: url("./fonts/Calibre/Calibre-Light.ttf");
+}
+
+@font-face {
+  font-family: "calibre";
+  src: url("./fonts/Calibre/Calibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: "calibre-bold";
+  src: url("./fonts/Calibre/Calibre-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "sfmono";
+  src: url("./fonts/SFMono/SFMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: "sfmono-light";
+  src: url("./fonts/SFMono/SFMono-Regular.ttf");
+}

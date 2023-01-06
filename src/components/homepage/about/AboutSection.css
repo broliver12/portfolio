@@ -1,0 +1,188 @@
+.aboutSectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 16vh;
+  padding-left: 22vw;
+  padding-right: 16vw;
+}
+
+.aboutSectionText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutSectionTitleBar {
+  font-size: 44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--os-text-light);
+  text-align: start;
+  white-space: nowrap;
+  margin-top: 64px;
+  padding-top: 16vh;
+  margin-top: 18px;
+}
+
+.aboutSectionTitleDecoration {
+  width: 100%;
+  max-width: 850px;
+  height: 1px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  background-color: var(--os-primary-light);
+}
+
+.aboutSectionBody {
+  font-size: 22px;
+  padding-left: 8px;
+  font-family: var(--os-font-main-light);
+  color: var(--os-text-body);
+  margin-top: 18px;
+  text-align: start;
+  max-width: 600px;
+  min-width: 600px;
+}
+
+.profilePicture {
+  background: linear-gradient(to top, #170ced33, #3e14e911),
+    url("../../../images/img/oliver_headshot.jpg") no-repeat center center;
+  background-size: contain;
+  transition: all 0.15s ease-out;
+  margin: 16px 96px 96px 96px;
+  border-radius: 8px;
+  min-width: 296px;
+  min-height: 296px;
+  max-width: 296px;
+  max-height: 296px;
+}
+
+.profilePicture:hover {
+  background: linear-gradient(to top, #00000000, #00000000),
+    url("../../../images/img/oliver_headshot.jpg") no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin: 12px 92px 92px 92px;
+  min-width: 304px;
+  min-height: 304px;
+  max-width: 304px;
+  max-height: 304px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .aboutSectionContainer {
+    padding-left: 16vw;
+    padding-right: 12vw;
+  }
+
+  .aboutSectionTitleDecoration {
+    max-width: 775px;
+  }
+
+  .aboutSectionBody {
+    padding-left: 32px;
+    max-width: 525px;
+    min-width: 525px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutSectionContainer {
+    padding-left: 12vw;
+    padding-right: 9vw;
+  }
+
+  .aboutSectionTitleBar {
+    font-size: 38px;
+  }
+
+  .aboutSectionTitleDecoration {
+    max-width: 650px;
+  }
+
+  .aboutSectionBody {
+    font-size: 20px;
+    max-width: 425px;
+    min-width: 425px;
+  }
+
+  .profilePicture {
+    margin: 16px 72px 72px 72px;
+  }
+
+  .profilePicture:hover {
+    margin: 12px 68px 68px 68px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .aboutSectionContainer {
+    padding-left: 10vw;
+    padding-right: 7.5vw;
+  }
+
+  .aboutSectionTitleDecoration {
+    margin-right: 32px;
+    max-width: 525px;
+  }
+
+  .aboutSectionTitleBar {
+    margin-left: 88px;
+  }
+
+  .aboutSectionBody {
+    max-width: 350px;
+    min-width: 350px;
+  }
+
+  .profilePicture {
+    margin: 16px 32px 32px 32px;
+    min-width: 224px;
+    min-height: 224px;
+    max-width: 224px;
+    max-height: 224px;
+  }
+
+  .profilePicture:hover {
+    margin: 12px 28px 28px 28px;
+    min-width: 232px;
+    min-height: 232px;
+    max-width: 232px;
+    max-height: 232px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .aboutSectionContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 32px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .aboutSectionTitleBar {
+    font-size: 32px;
+    margin-left: 32px;
+    justify-content: start;
+  }
+
+  .aboutSectionBody {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 90%;
+    margin-left: 0px;
+  }
+
+  .profilePicture {
+    margin: 16px 4px 32px 4px;
+  }
+
+  .profilePicture:hover {
+    margin: 12px 0px 28px 0px;
+  }
+}

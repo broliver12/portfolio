@@ -1,0 +1,106 @@
+.projectTileContainer {
+  width: 292px;
+  height: 292px;
+  padding: 0;
+  margin: 8px;
+  flex-basis: 0.35;
+  padding: 12px;
+  background-color: var(--os-primary-light-transparent);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.projectTileContainer:hover {
+  margin-top: 2px;
+  margin-bottom: 14px;
+  transition: all 0.1s ease-out;
+}
+
+.projectTitle {
+  font-size: 24px;
+  margin-left: 4px;
+  color: var(--os-element);
+  font-family: var(--os-font-main-bold);
+  margin-top: 24px;
+}
+
+.projectDescription {
+  font-size: 18px;
+  margin: 4px;
+  font-family: var(--os-font-main-light);
+  color: var(--os-text-light);
+}
+
+.linkBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkBarSocials {
+  display: flex;
+  flex-direction: row;
+}
+
+.folderIcon {
+  width: 64px;
+  height: 64px;
+  justify-self: start;
+  color: var(--os-primary-light);
+}
+
+.githubIcon {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  margin-right: 1px;
+  color: var(--os-text-light);
+}
+
+.githubIcon:hover {
+  padding: 2px;
+  cursor: pointer;
+}
+
+.hyperlinkIcon {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  margin-left: 1px;
+  color: var(--os-text-light);
+}
+
+.hyperlinkIcon:hover {
+  padding: 2px;
+  cursor: pointer;
+}
+
+.languageContainer {
+  display: flex;
+  justify-self: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 4px;
+  position: relative;
+  height: 100%;
+}
+
+.languageItem {
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 9px;
+  margin-right: 6px;
+  text-overflow: ellipsis;
+  background-color: #00000000;
+  border: 1px solid var(--os-text-light);
+  padding-top: 4px;
+  margin-bottom: 8px;
+  color: var(--os-text-light);
+}

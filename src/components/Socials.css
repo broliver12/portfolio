@@ -1,0 +1,39 @@
+.socialsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 44px;
+  z-index: 999;
+  animation: fadeInAnimation ease 1s forwards;
+}
+
+.socialsBottomIcon {
+  width: 2px;
+  height: 72px;
+  margin-top: 16px;
+  background-color: var(--os-primary-light);
+}
+
+.socialsIcon {
+  color: var(--os-primary-light);
+  width: 28px;
+  height: 28px;
+  margin: 3px;
+  margin-top: 8px;
+}
+
+.socialsIcon:hover {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 760px) {
+  .socialsWrapper {
+    display: none;
+  }
+}
