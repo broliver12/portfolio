@@ -2,7 +2,6 @@ import React from "react";
 import "./ProjectTile.css";
 import IconFolder from "../../../images/icon/folder";
 import IconGithub from "../../../images/icon/github";
-import IconExternal from "../../../images/icon/external";
 
 function ProjectTile(props) {
   return (
