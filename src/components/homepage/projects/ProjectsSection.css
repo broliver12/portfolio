@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   color: var(--os-text-light);
-  text-align: start;
+  text-align: flex-start;
   white-space: nowrap;
   padding-top: 8vh;
   margin-top: 18px;
