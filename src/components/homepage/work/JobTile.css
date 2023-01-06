@@ -11,6 +11,10 @@
   border-left: 6px solid var(--os-text-dark);
 }
 
+.jobTileContainer > * {
+  cursor: pointer;
+}
+
 .jobTileContainer:hover {
   border-left: 6px solid var(--os-element);
   transition: all 0.2s ease;

@@ -54,6 +54,12 @@
   font-family: var(--os-font-accent);
   width: 100px;
   min-width: 150px;
+  cursor: pointer;
+  max-lines: 1;
+}
+
+.showHideButton:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px) {

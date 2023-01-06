@@ -54,6 +54,10 @@
   font-family: var(--os-font-accent);
 }
 
+.mainCta:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1200px) {
   .introContainer {
     padding-left: 15vw;

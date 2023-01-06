@@ -3,7 +3,6 @@
   border-radius: 2px;
   outline: none;
   border: none;
-  cursor: pointer;
 }
 
 .btn--primary {
@@ -22,6 +21,10 @@
   border: 1px solid var(--os-primary-light);
   text-decoration: none;
   border-radius: 8px;
+}
+
+.btn--outline > * {
+  cursor: pointer;
 }
 
 .btn--outline:hover {

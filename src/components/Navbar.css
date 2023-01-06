@@ -60,6 +60,11 @@
   z-index: 1000;
 }
 
+.navbar-logo:active {
+  padding: 2px;
+  font-size: 44px;
+}
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -79,6 +84,7 @@
   color: var(--os-primary-light);
   background-color: var(--os-primary-light-transparent);
   transition: ease all 0.2s;
+  cursor: pointer;
 }
 
 .bottom-item {
@@ -88,11 +94,16 @@
 .innerItem {
   width: 100%;
   font-family: var(--os-font-accent);
+  cursor: pointer;
 }
 
 .menu-icon {
   display: none;
   color: var(--os-primary-light);
+}
+
+.resumeButton:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
@@ -160,6 +171,7 @@
 
   .fa-times:hover {
     color: var(--os-cancel);
+    cursor: pointer;
   }
 
   .resumeButton {

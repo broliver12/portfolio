@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   color: var(--os-text-light);
-  text-align: start;
+  text-align: flex-start;
   white-space: nowrap;
   margin-top: 64px;
   padding-top: 16vh;
@@ -42,7 +42,7 @@
   font-family: var(--os-font-main-light);
   color: var(--os-text-body);
   margin-top: 18px;
-  text-align: start;
+  text-align: flex-start;
   max-width: 600px;
   min-width: 600px;
 }
@@ -168,7 +168,7 @@
   .aboutSectionTitleBar {
     font-size: 32px;
     margin-left: 32px;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .aboutSectionBody {

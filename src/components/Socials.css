@@ -6,7 +6,7 @@
   bottom: 0px;
   left: 44px;
   z-index: 999;
-  animation: fadeInAnimation ease 1s forwards;
+  animation: fadeInAnimation ease 2s forwards;
 }
 
 .socialsBottomIcon {
@@ -24,6 +24,10 @@
   margin-top: 8px;
 }
 
+.socialsIcon > * {
+  cursor: pointer;
+}
+
 .socialsIcon:hover {
   cursor: pointer;
   height: 34px;
@@ -31,6 +35,8 @@
   margin: 0px;
   margin-top: 5px;
 }
+
+
 
 @media only screen and (max-width: 760px) {
   .socialsWrapper {

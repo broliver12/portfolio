@@ -29,9 +29,17 @@
   padding: 16px;
   padding-left: 48px;
   padding-right: 48px;
-  margin-top: 36px;
   font-size: 18px;
   font-family: var(--os-font-accent);
+}
+
+.wrap {
+  margin-top: 36px;
+}
+
+.wrap > *{
+  pointer-events:auto;
+  cursor: pointer;
 }
 
 .bottomSocialsContainer {
