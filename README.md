@@ -16,5 +16,5 @@ All components & animations were created from scratch using React, CSS, Figma.
 
 ## License
 
-[MIT](https://github.com/broliver12/blob/main/LICENSE.text)
+[MIT](https://github.com/broliver12/blob/master/LICENSE.text)
 
