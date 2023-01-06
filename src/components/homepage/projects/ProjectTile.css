@@ -48,7 +48,7 @@
 .folderIcon {
   width: 64px;
   height: 64px;
-  justify-self: start;
+  justify-self: flex-start;
   color: var(--os-primary-light);
 }
 

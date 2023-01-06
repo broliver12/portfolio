@@ -120,7 +120,7 @@ function WorkSection() {
             {
               <div className="techStackContainer">
                 {jobs[selectedJobId].stack.map((item) => (
-                  <a className="stackItem">{item}</a>
+                  <span className="stackItem">{item}</span>
                 ))}
               </div>
             }

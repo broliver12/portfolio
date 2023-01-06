@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import "./Socials.css";
@@ -12,8 +12,6 @@ function Navbar({...props}) {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const [hideNavBar, setHideNavBar] = useState(false);
 
   const standardButtonText = [
     {
@@ -84,7 +82,7 @@ function Navbar({...props}) {
   };
 
   return (
-      (hideNavBar === true) ? <div></div> :
+      (false) ? <div></div> :
       <nav className={click ? "navbar active" : "navbar"}>
         <Link
           to="/"

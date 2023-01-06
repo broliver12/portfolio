@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./HomePage.css";
 import IntroSection from "./intro/IntroSection";
 import AboutSection from "./about/AboutSection";

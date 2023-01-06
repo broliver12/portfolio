@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: flex-end;
   color: var(--os-text-light);
-  text-align: start;
+  text-align: flex-start;
   white-space: nowrap;
   padding-top: 8vh;
   margin-top: 18px;
@@ -142,7 +142,7 @@
   flex-wrap: wrap;
   padding-left: 12px;
   padding-top: 16px;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .stackItem {

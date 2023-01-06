@@ -23,7 +23,7 @@ function App() {
 
   return loading === true ? (
     <div class="loadingContainer">
-      <img class="loadingIcon" src={loadingIcon}></img>
+      <img class="loadingIcon" src={loadingIcon} alt="loading icon"></img>
     </div>
   ) : (
     <Router>
