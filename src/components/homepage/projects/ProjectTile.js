@@ -22,9 +22,9 @@ function ProjectTile(props) {
           <div className="githubIcon" alt="Link to project github" onClick={() => props.githubIconAction()}>
             <IconGithub />
           </div>
-          <div className="hyperlinkIcon" alt="Link to deployed project" onClick={() => props.externalIconAction()}>
+          {/* <div className="hyperlinkIcon" alt="Link to deployed project" onClick={() => props.externalIconAction()}>
             <IconExternal />
-          </div>
+          </div> */}
         </div>
       </div>
       <div

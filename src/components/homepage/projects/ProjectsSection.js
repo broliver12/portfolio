@@ -46,6 +46,9 @@ function ProjectsSection() {
       description: "This website! A lightweight portfolio project.",
       selected: false,
       skills: ["React", "Javscript", "Node"],
+      githubIconAction: () => {
+        openInNewTab("https://github.com/broliver12/portfolio")
+      },
     },
     {
       title: "Raytracer",
@@ -73,10 +76,10 @@ function ProjectsSection() {
         // noop
       },
       githubIconAction: () => {
-        openInNewTab("https://github.com/broliver12/erc721_foundry")
+        openInNewTab("https://github.com/broliver12/foundry_erc721")
       },
       externalIconAction: () => {
-        openInNewTab("https://github.com/broliver12/erc721_foundry")
+        openInNewTab("https://github.com/broliver12/foundry_erc721")
       }
     },
   ];
