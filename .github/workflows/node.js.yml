@@ -27,8 +27,7 @@ jobs:
     - name: Cache dependencies
       uses: actions/cache@v2
       with:
-        path: |
-        **/node_modules
+        path: /**/node_modules
       key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install dependencies
@@ -38,7 +37,7 @@ jobs:
     #   run: npm test
 
     - name: Run linter
-        run: npm run lint
+      run: npm run lint
 
     - name: Build
       run: npm run build
