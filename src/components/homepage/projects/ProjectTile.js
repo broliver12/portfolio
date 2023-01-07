@@ -1,16 +1,15 @@
-import React from "react";
-import "./ProjectTile.css";
-import IconFolder from "../../../images/icon/folder";
-import IconGithub from "../../../images/icon/github";
-import IconExternal from "../../../images/icon/external";
+import React from 'react'
+import './ProjectTile.css'
+import IconFolder from '../../../images/icon/folder'
+import IconGithub from '../../../images/icon/github'
 
 function ProjectTile(props) {
   return (
     <div
       className={
-        props.selected === true
-          ? "projectTileContainer"
-          : "projectTileContainer"
+        props.selected === true ?
+          'projectTileContainer' :
+          'projectTileContainer'
       }
       onClick={() => props.clickAction()}
     >
@@ -28,24 +27,24 @@ function ProjectTile(props) {
         </div>
       </div>
       <div
-        className={props.selected === true ? "projectTitle" : "projectTitle"}
+        className={props.selected === true ? 'projectTitle' : 'projectTitle'}
       >
         {props.title}
       </div>
       <div
         className={
-          props.selected === true ? "projectDescription" : "projectDescription"
+          props.selected === true ? 'projectDescription' : 'projectDescription'
         }
       >
         {props.description}
       </div>
       <div className="languageContainer">
-        {props.skills.map((item) => (
-          <div className="languageItem">{item}</div>
+        {props.skills.map((item, index) => (
+          <div key={index} className="languageItem">{item}</div>
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default ProjectTile;
+export default ProjectTile

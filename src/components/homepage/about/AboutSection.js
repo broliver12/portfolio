@@ -1,6 +1,6 @@
-import React from "react";
-import "./AboutSection.css";
-import "../../Button.css";
+import React from 'react'
+import './AboutSection.css'
+import '../../Button.css'
 
 function AboutSection(props) {
   return (
@@ -12,7 +12,7 @@ function AboutSection(props) {
       <div className="aboutSectionContainer">
         <div className="aboutSectionText">
           <div className="aboutSectionBody">
-            Hello! My name is Oliver, and I'm a friendly and enthusiastic
+            Hello! My name is Oliver, and I&#39;m a friendly and enthusiastic
             software developer. I started programming during my first year of
             university; I quickly became obsessed with computers, and focused my
             studies on software & robotics. My interest in Front-End development
@@ -22,7 +22,7 @@ function AboutSection(props) {
           <div className="aboutSectionBody">
             I joined Konrad Group because I saw an opportunity to work with
             world class clients, and join a team of truly awesome people. Four
-            years later, I love the team and I'm still learning every sprint.
+            years later, I love the team and I&#39;m still learning every sprint.
           </div>
           <div className="aboutSectionBody">
             Outside of programming, I spend most of my time walking my dog,
@@ -31,10 +31,10 @@ function AboutSection(props) {
             about other people and cultures.
           </div>
         </div>
-        <div className="profilePicture" onClick={() => {}} />
+        <div className="profilePicture" onClick={() => { }} />
       </div>
     </div>
-  );
+  )
 }
 
-export default AboutSection;
+export default AboutSection

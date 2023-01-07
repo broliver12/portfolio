@@ -1,44 +1,43 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
-import "./Socials.css";
+import React, {useState} from 'react'
+import './Navbar.css'
+import './Socials.css'
 
-import "./Button.css";
-import pdf from '../images/img/resume.pdf';
+import './Button.css'
+import pdf from '../images/img/resume.pdf'
 
 
 function Navbar({...props}) {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(false)
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleClick = () => setClick(!click)
+  const closeMobileMenu = () => setClick(false)
 
   const standardButtonText = [
     {
-      title: "About",
+      title: 'About',
       callback: () => {
-        document.getElementById("about").scrollIntoView();
+        document.getElementById('about').scrollIntoView()
       },
     },
     {
-      title: "Experience",
+      title: 'Experience',
       callback: () => {
-        document.getElementById("experience").scrollIntoView();
+        document.getElementById('experience').scrollIntoView()
       },
     },
     {
-      title: "Portfolio",
+      title: 'Portfolio',
       callback: () => {
-        document.getElementById("projects").scrollIntoView();
+        document.getElementById('projects').scrollIntoView()
       },
     },
     {
-      title: "Contact",
+      title: 'Contact',
       callback: () => {
-        document.getElementById("contact").scrollIntoView();
+        document.getElementById('contact').scrollIntoView()
       },
     },
-  ];
+  ]
 
   // useEffect(() => {
   //   async function sl() {
@@ -64,40 +63,39 @@ function Navbar({...props}) {
 
   const getStandardButton = (title, callback) => {
     return (
-      <li className="nav-item">
+      <li className="nav-item" onClick={() => {
+        callback()
+        closeMobileMenu()
+      }}>
         <div className="nav-links">
           <div
-            className={click ? "innerItem" : "innerItem active"}
-            onClick={() => {
-              callback();
-              closeMobileMenu();
-            }}
+            className={click ? 'innerItem' : 'innerItem active'}
           >
             {title}
           </div>
         </div>
       </li>
-    );
-  };
+    )
+  }
 
   return (
-      (false) ? <div></div> :
-      <nav className={click ? "navbar active" : "navbar"}>
-        <Link
-          to="/"
+    (false) ? <div></div> :
+      <nav className={click ? 'navbar active' : 'navbar'}>
+        <span
           className="navbar-logo"
           onClick={() => {
-            closeMobileMenu();
-            document.getElementById("home").scrollIntoView();
+            closeMobileMenu()
+            document.body.scrollTop = 0 // For Safari
+            document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
           }}
         >
           OS
-        </Link>
+        </span>
         <div className="navbar-container">
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             {standardButtonText.map((item) =>
               getStandardButton(item.title, item.callback)
             )}
@@ -105,8 +103,8 @@ function Navbar({...props}) {
               <div
                 className="btn--outline innerItem resumeButton"
                 onClick={() => {
-                  closeMobileMenu();
-                  window.open(pdf, '_blank');
+                  closeMobileMenu()
+                  window.open(pdf, '_blank')
                 }}
               >
                 Resume
@@ -115,7 +113,7 @@ function Navbar({...props}) {
           </ul>
         </div>
       </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
