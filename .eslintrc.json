@@ -31,4 +31,9 @@
     "space-infix-ops": "warn",
     "require-jsdoc": "warn"
   }
+  // "settings": {
+  //   "react": {
+  //     "version": "detect"
+  //   }
+  // }
 }

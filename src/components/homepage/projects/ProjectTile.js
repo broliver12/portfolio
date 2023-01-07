@@ -25,7 +25,10 @@ function ProjectTile(props) {
           <IconFolder />
         </div>
         <div className="linkBarSocials">
-          <div className="githubIcon" alt="Link to project github" onClick={() => props.githubIconAction()}>
+          <div
+            className="githubIcon"
+            alt="Link to project github"
+            onClick={() => props.githubIconAction()}>
             <IconGithub />
           </div>
         </div>

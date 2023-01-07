@@ -35,11 +35,21 @@ function ContactSection() {
     <div id="contact" className="contactSectionContainer">
       <div className="contactTitleHeader">Want to get in touch?</div>
       <div className="contactParagraph">
-        Even though I&#39;m not currently looking for a new position, my inbox is
+        Even though I&#39;m not currently
+        looking for a new position, my inbox is
         always open!
       </div>
 
-      <div className="wrap"><a href="mailto:oliver.strasz@gmail.com" rel="noopener noreferrer" target="_blank" className="btn--outline sendAnEmailButton">Send an email</a></div>
+      <div className="wrap">
+        <a
+          href="mailto:oliver.strasz@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="btn--outline
+        sendAnEmailButton">
+          Send an email
+        </a>
+      </div>
       <div className="bottomSocialsContainer">
         {socials.map((item, index) => {
           return (

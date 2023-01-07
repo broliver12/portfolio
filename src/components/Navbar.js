@@ -23,8 +23,8 @@ function Navbar({...props}) {
     },
     {
       title: 'Experience',
-      callback: () => {
-        document.getElementById('experience').scrollIntoView()
+      callback: ( ) => {
+        document.getElementById('experience' ).scrollIntoView()
       },
     },
     {
@@ -45,13 +45,15 @@ function Navbar({...props}) {
   //   async function sl() {
   //     var lastScrollTop = 0;
 
-  //     // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-  //     window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-  //       var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+  //     // element should be replaced with the actual target element
+  // on which you have applied scroll, use window in case of no target element.
+  //     window.addEventListener("scroll", function(){
+  //       var st = window.pageYOffset || document.documentElement.scrollTop;
   //       if (st > lastScrollTop){
   //           // downscroll code
   //           setHideNavBar(true)
-  //           lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  //           // For Mobile or negative scrolling
+  //           lastScrollTop = st <= 0 ? 0 : st;
   //       } else if(st < lastScrollTop){
   //           // upscroll code
   //           closeMobileMenu();
@@ -87,8 +89,10 @@ function Navbar({...props}) {
           className="navbar-logo"
           onClick={() => {
             closeMobileMenu()
-            document.body.scrollTop = 0 // For Safari
-            document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+            // For Safari
+            document.body.scrollTop = 0
+            // For Chrome, Firefox, IE and Opera
+            document.documentElement.scrollTop = 0
           }}
         >
           OS

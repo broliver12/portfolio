@@ -6,7 +6,7 @@ import ProjectTile from './ProjectTile'
 /**
  * Personal Projects Widget
  *
- * @return {ProjectsSection}
+ * @return {WorkSection}
  */
 function ProjectsSection() {
   const openInNewTab = (url) => {
@@ -17,7 +17,10 @@ function ProjectsSection() {
     {
       title: 'Iris',
       description:
-        'An Android app for designers & creatives on the go. Users can select (or capture) an image, then zoom in down to the pixel level, and save specific color samples.',
+        'An Android app for designers & creatives on the go. ' +
+        'Users can select (or capture) an image, ' +
+        'then zoom in down to the pixel level, ' +
+        'and save specific color samples.',
       selected: false,
       skills: ['Kotlin', 'Android'],
       clickAction: () => {
@@ -33,7 +36,9 @@ function ProjectsSection() {
     {
       title: 'NFT(ools)',
       description:
-        'Collection of utility files for batch editing .json & .png files. Automation for every step of the NFT image generation & metadata creation proccess.',
+        'Collection of utility files for batch editing' +
+        '.json & .png files. Automation for every step of' +
+        'the NFT image generation & metadata creation proccess.',
       selected: false,
       skills: ['Javascript', 'Node'],
       clickAction: () => {
@@ -58,7 +63,9 @@ function ProjectsSection() {
     {
       title: 'Raytracer',
       description:
-        'Realistic 3D image generator program. Phong shading and optimized raytracing, implemented from scratch.',
+        'Realistic 3D image generator program. ' +
+        'Phong shading and optimized raytracing, ' +
+        'implemented from scratch.',
       selected: false,
       skills: ['C++', 'UofT'],
       clickAction: () => {
@@ -74,7 +81,9 @@ function ProjectsSection() {
     {
       title: 'ERC721 Template',
       description:
-        'Multiple complete, extensible implementations of the ERC721 (NFT) Standard Smart Contract. Includes unit tests. ',
+        'Multiple complete, extensible implementations' +
+        'of the ERC721 (NFT) Standard Smart Contract.' +
+        'Includes unit tests.',
       selected: false,
       skills: ['Solidity', 'Ethereum', 'Blockchain'],
       clickAction: () => {
