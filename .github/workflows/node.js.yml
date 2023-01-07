@@ -1,0 +1,56 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ "develop", "master" ]
+  pull_request:
+    branches: [ "*" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: |
+        **/node_modules
+      key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - name: Install dependencies
+      run: npm i
+
+    # - name: Run the tests
+    #   run: npm test
+
+    - name: Run linter
+        run: npm run lint
+
+    - name: Build
+      run: npm run build
+
+    - name: Deploy
+      run: |
+        git config --global user.name "name"
+        git config --global user.email "name@name.name"
+        git remote set-url origin https://broliver12@github.com/portfolio
+        npm run deploy
+      env:
+        user_name: "portfolio ci"
+        user_email: "name@name.name"
+        github_token: ${{ secrets.PORTFOLIO_CI }}
+        repository: ${{ github.repository }}

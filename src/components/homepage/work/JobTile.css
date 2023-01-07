@@ -11,7 +11,7 @@
   border-left: 6px solid var(--os-text-dark);
 }
 
-.jobTileContainer > * {
+.jobTileContainer>* {
   cursor: pointer;
 }
 

@@ -49,7 +49,7 @@
 
 .profilePicture {
   background: linear-gradient(to top, #170ced33, #3e14e911),
-    url("../../../images/img/oliver_headshot.jpg") no-repeat center center;
+    url(../../../../public/img/oliver_headshot.jpg) no-repeat center center;
   background-size: contain;
   transition: all 0.15s ease-out;
   margin: 16px 96px 96px 96px;
@@ -62,7 +62,7 @@
 
 .profilePicture:hover {
   background: linear-gradient(to top, #00000000, #00000000),
-    url("../../../images/img/oliver_headshot.jpg") no-repeat center center;
+    url(../../../../public/img/oliver_headshot.jpg) no-repeat center center;
   background-size: contain;
   cursor: pointer;
   transition: all 0.3s ease-out;
