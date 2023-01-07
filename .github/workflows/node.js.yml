@@ -46,7 +46,7 @@ jobs:
       run: |
         git config --global user.name "name"
         git config --global user.email "name@name.name"
-        git remote set-url origin https://broliver12@github.com/portfolio
+        git remote set-url origin https://${github_token}@github.com/portfolio
         npm run deploy
       env:
         user_name: "portfolio ci"
