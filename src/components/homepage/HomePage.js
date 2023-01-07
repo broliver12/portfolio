@@ -1,11 +1,16 @@
-import React from "react";
-import "./HomePage.css";
-import IntroSection from "./intro/IntroSection";
-import AboutSection from "./about/AboutSection";
-import WorkSection from "./work/WorkSection";
-import ProjectsSection from "./projects/ProjectsSection";
-import ContactSection from "./contact/ContactSection";
+import React from 'react'
+import './HomePage.css'
+import IntroSection from './intro/IntroSection'
+import AboutSection from './about/AboutSection'
+import WorkSection from './work/WorkSection'
+import ProjectsSection from './projects/ProjectsSection'
+import ContactSection from './contact/ContactSection'
 
+/**
+ * Home Page Wrapper
+ *
+ * @return {HomePage}
+ */
 function HomePage() {
   return (
     <div>
@@ -17,7 +22,7 @@ function HomePage() {
         <ContactSection />
       </div>
     </div>
-  );
+  )
 }
 
-export default HomePage;
+export default HomePage

@@ -37,8 +37,8 @@
   margin-top: 36px;
 }
 
-.wrap > *{
-  pointer-events:auto;
+.wrap>* {
+  pointer-events: auto;
   cursor: pointer;
 }
 
