@@ -1,8 +1,15 @@
 import React from 'react'
 import './ProjectTile.css'
-import IconFolder from '../../../images/icon/folder'
-import IconGithub from '../../../images/icon/github'
+import IconFolder from '../../../images/icon/IconFolder'
+import IconGithub from '../../../images/icon/IconGithub'
 
+/**
+ * Tile that displays Personal Project Information
+ *
+ * @arg {any} props
+ *
+ * @return {ProjectTile}
+ */
 function ProjectTile(props) {
   return (
     <div
@@ -21,9 +28,6 @@ function ProjectTile(props) {
           <div className="githubIcon" alt="Link to project github" onClick={() => props.githubIconAction()}>
             <IconGithub />
           </div>
-          {/* <div className="hyperlinkIcon" alt="Link to deployed project" onClick={() => props.externalIconAction()}>
-            <IconExternal />
-          </div> */}
         </div>
       </div>
       <div

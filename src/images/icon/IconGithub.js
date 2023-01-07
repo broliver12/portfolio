@@ -1,5 +1,12 @@
 import React from 'react'
 
+/**
+ * Originally written by https://github.com/bchiang7
+ * File modified for this app
+ *
+ * Github Icon
+ * @return {IconGitHub}
+ */
 const IconGitHub = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

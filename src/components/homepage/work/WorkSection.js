@@ -2,6 +2,11 @@ import React, {useState} from 'react'
 import JobTile from './JobTile'
 import './WorkSection.css'
 
+/**
+ * Professional Experience Widget
+ *
+ * @return {WorkSection}
+ */
 function WorkSection() {
   const [selectedJobId, setSelectedJobId] = useState(0)
   const jobs = [

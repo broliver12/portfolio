@@ -2,6 +2,13 @@ import React from 'react'
 import './AboutSection.css'
 import '../../Button.css'
 
+/**
+ * About Widget
+ *
+ * @arg {any} props
+ *
+ * @return {AboutSection}
+ */
 function AboutSection(props) {
   return (
     <div id="about">
@@ -22,7 +29,8 @@ function AboutSection(props) {
           <div className="aboutSectionBody">
             I joined Konrad Group because I saw an opportunity to work with
             world class clients, and join a team of truly awesome people. Four
-            years later, I love the team and I&#39;m still learning every sprint.
+            years later, I love the team and I&#39;m still learning every
+             sprint.
           </div>
           <div className="aboutSectionBody">
             Outside of programming, I spend most of my time walking my dog,

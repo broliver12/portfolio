@@ -1,8 +1,12 @@
 import React from 'react'
 import './IntroSection.css'
 import '../../Button.css'
-import pdf from '../../../images/img/resume.pdf'
 
+/**
+ * Introduction Widget
+ *
+ * @return {IntroSection}
+ */
 function IntroSection() {
   return (
     <div id="intro" className="introContainer">
@@ -17,7 +21,7 @@ function IntroSection() {
         <l className="employerLabel">Konrad Group.</l>I love learning about new
         technology and solving complex problems.
       </div>
-      <div className="btn--outline mainCta" onClick={() => window.open(pdf, '_blank')}>Resume</div>
+      <div className="btn--outline mainCta" onClick={() => window.open('ostraszynski_resume.pdf', '_blank')}>Resume</div>
     </div>
   )
 }

@@ -9,24 +9,34 @@ import {
   Navigate
 } from 'react-router-dom'
 import Socials from './components/Socials'
-import loadingIcon from './images/icon/loading.svg'
+import IconLoading from './images/icon/IconLoading'
 
+/**
+ * Main App widget
+ *
+ * @return {App}
+ */
 function App() {
   const [loading, setLoading] = useState(true)
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
   useEffect(() => {
-    async function sl() {
+    /**
+     * Show loading view
+     */
+    async function loadContent() {
       await sleep(2500)
       setLoading(false)
     }
-    sl()
+    loadContent()
   }, [])
 
   return loading === true ? (
     <div className="loadingContainer">
-      <img className="loadingIcon" src={loadingIcon} alt="loading icon"></img>
+      <span className="loadingIcon">
+        <IconLoading />
+      </span>
     </div>
   ) : (
     <Router>

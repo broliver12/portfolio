@@ -59,19 +59,19 @@
 
 .chipotleDecoration {
   background: linear-gradient(to top, #00000033, #00000022),
-    url(../../../images/img/chipotle.png) no-repeat top -200px center;
+    url(../../../../public/img/chipotle.png) no-repeat top -200px center;
   background-size: 1000px;
 }
 
 .gmDecoration {
   background: linear-gradient(to top, #000000bb, #00000099),
-    url(../../../images/img/gm.png) no-repeat center center;
+    url(../../../../public/img/gm.png) no-repeat center center;
   background-size: 1750px;
 }
 
 .kgDecoration {
   background: linear-gradient(to top, #000000bb, #00000099),
-    url(../../../images/img/kg.png) no-repeat left -300px top -400px;
+    url(../../../../public/img/kg.png) no-repeat left -300px top -400px;
   background-size: 2000px;
 }
 

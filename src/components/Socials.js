@@ -1,8 +1,15 @@
 import React from 'react'
 import './Socials.css'
-import IconGitHub from './../images/icon/github'
-import IconLinkedIn from './../images/icon/linkedin'
+import IconGitHub from '../images/icon/IconGithub'
+import IconLinkedIn from '../images/icon/IconLinkedin'
 
+/**
+ * Social Media Icons
+ *
+ * Bottom Left (Desktop) or Page Bottom (Mobile)
+ *
+ * @return {Socials}
+ */
 function Socials() {
   const openInNewTab = (url) => {
     window.open(url, '_blank')

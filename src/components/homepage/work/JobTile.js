@@ -1,6 +1,13 @@
 import React from 'react'
 import './JobTile.css'
 
+/**
+ * Tile that displays Job Title & Employer Name
+ *
+ * @arg {any} props
+ *
+ * @return {JobTile}
+ */
 function JobTile(props) {
   return (
     <div

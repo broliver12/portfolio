@@ -1,8 +1,13 @@
 import React from 'react'
 import './ContactSection.css'
-import IconGitHub from '../../../images/icon/github'
-import IconLinkedIn from '../../../images/icon/linkedin'
+import IconGitHub from '../../../images/icon/IconGithub'
+import IconLinkedIn from '../../../images/icon/IconLinkedin'
 
+/**
+ * Contact Widget
+ *
+ * @return {ContactSection}
+ */
 function ContactSection() {
   const openInNewTab = (url) => {
     window.open(url, '_blank')

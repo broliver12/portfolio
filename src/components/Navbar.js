@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import './Navbar.css'
 import './Socials.css'
-
 import './Button.css'
-import pdf from '../images/img/resume.pdf'
 
-
+/**
+ * Top Navigation Bar & Drop down Menu
+ *
+ * @return {Navbar}
+ */
 function Navbar({...props}) {
   const [click, setClick] = useState(false)
 
@@ -104,7 +106,7 @@ function Navbar({...props}) {
                 className="btn--outline innerItem resumeButton"
                 onClick={() => {
                   closeMobileMenu()
-                  window.open(pdf, '_blank')
+                  window.open('ostraszynski_resume.pdf', '_blank')
                 }}
               >
                 Resume

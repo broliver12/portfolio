@@ -6,6 +6,11 @@ import WorkSection from './work/WorkSection'
 import ProjectsSection from './projects/ProjectsSection'
 import ContactSection from './contact/ContactSection'
 
+/**
+ * Home Page Wrapper
+ *
+ * @return {HomePage}
+ */
 function HomePage() {
   return (
     <div>

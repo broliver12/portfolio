@@ -3,6 +3,11 @@ import './ProjectsSection.css'
 import '../../Button.css'
 import ProjectTile from './ProjectTile'
 
+/**
+ * Personal Projects Widget
+ *
+ * @return {ProjectsSection}
+ */
 function ProjectsSection() {
   const openInNewTab = (url) => {
     window.open(url, '_blank')
