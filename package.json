@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "async-file": "^2.0.2",
     "cli-ux": "^6.0.9",
+    "gh-pages": "^4.0.0",
     "got": "^12.0.2",
     "phoenix": "^1.6.6",
     "prettier": "^2.8.2",
@@ -25,7 +26,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint": "npx eslint --fix \"./src /**/*.js\"",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,8 +49,9 @@
   "devDependencies": {
     "eslint": "^8.31.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.31.11",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0"
-  }
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.31.11"
+  },
+  "homepage": "https://broliver12.github.io/portfolio"
 }
