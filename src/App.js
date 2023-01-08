@@ -39,7 +39,7 @@ function App() {
       </span>
     </div>
   ) : (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Socials />
       <Routes>
