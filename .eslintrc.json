@@ -18,7 +18,7 @@
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "no-var": "error",
-    "max-len": ["error", 80],
+    "max-len": ["error", 80, {"ignorePattern": "d=\"([\\s\\S]*?)\""}],
     "comma-dangle": [
       "error",
       {
@@ -30,10 +30,10 @@
     "no-console": "warn",
     "space-infix-ops": "warn",
     "require-jsdoc": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
-  // "settings": {
-  //   "react": {
-  //     "version": "detect"
-  //   }
-  // }
 }
