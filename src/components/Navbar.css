@@ -150,7 +150,7 @@
   }
 
   .nav-links:hover {
-    background-color: var(--os-primary-light-transparent2);
+    background-color: var(--os-primary-light-transparent);
     text-decoration: none;
   }
 

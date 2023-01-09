@@ -107,7 +107,7 @@
   line-height: 150%;
   font-size: 20px;
   font-family: var(--os-font-main-light);
-  color: var(--os-accent);
+  color: var(--os-text-light);
 }
 
 .dataRow {
@@ -125,7 +125,8 @@
 
 .dataValue {
   font-size: 22px;
-  color: var(--os-accent);
+  font-family: var(--os-font-main-light);
+  color: var(--os-text-light);
 }
 
 .dataSeparator {
@@ -154,7 +155,7 @@
   margin: 4px;
   text-overflow: ellipsis;
   background-color: #00000000;
-  border: 1px solid var(--os-accent);
+  border: 1px solid var(--os-text-light);
   padding-top: 6px;
   margin-bottom: 8px;
   color: var(--os-text-light);

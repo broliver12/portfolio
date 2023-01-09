@@ -8,7 +8,7 @@
   border-radius: 4px;
   background-color: #00000000;
   border: 2px solid var(--os-primary-light-transparent);
-  border-left: 6px solid var(--os-text-dark);
+  border-left: 6px solid var(--os-primary-light-transparent);
 }
 
 .jobTileContainer>* {
