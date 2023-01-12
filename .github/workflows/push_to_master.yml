@@ -1,8 +1,8 @@
-name: PR - Lint, Build
+name: Push to Master - Lint, Build, Deploy
 
 on:
-  pull_request:
-    branches: [ "*" ]
+  push:
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -39,3 +39,15 @@ jobs:
 
     - name: Build
       run: npm run build
+
+    - name: Deploy
+      run: |
+        git config --global user.name "name"
+        git config --global user.email "name@name.name"
+        git remote set-url origin ${github_token}@github.com/portfolio
+        npm run deploy
+      env:
+        user_name: "portfolio ci"
+        user_email: "name@name.name"
+        github_token: ${{ secrets.PORTFOLIO_CI }}
+        repository: ${{ github.repository }}
