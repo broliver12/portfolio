@@ -25,8 +25,8 @@ function Navbar({...props}) {
     },
     {
       title: 'Experience',
-      callback: ( ) => {
-        document.getElementById('experience' ).scrollIntoView()
+      callback: () => {
+        document.getElementById('experience').scrollIntoView()
       },
     },
     {

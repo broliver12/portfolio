@@ -101,11 +101,13 @@ function WorkSection() {
     },
   ]
 
-  const dataRow = (dKey, value) => {
+  const dataRow = (dKey, value, separator) => {
     return (
       <div className="dataRow">
         <div className="dataKey">{dKey}</div>
-        <div className="dataSeparator">:</div>
+        <div className="dataSeparator">
+          {(separator === false) ? <></> : <>:</>}
+        </div>
         <div className="dataValue">{value}</div>
       </div>
     )
@@ -118,7 +120,7 @@ function WorkSection() {
         <div className="workTitleDecoration" />
       </div>
 
-      <div className="jobTableContainer">
+      <div className="jobTableContainer reveal fade-right">
         <div className="jobListContainer scrollMenu">
           {jobs.map((job, index) => (
             <JobTile

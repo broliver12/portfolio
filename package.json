@@ -1,4 +1,5 @@
 {
+  "homepage": "https://broliver12.github.io",
   "name": "portfolio",
   "version": "0.1.0",
   "dependencies": {
@@ -26,10 +27,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "npx eslint --fix \"./src/**/*.js\"",
+    "lint": "npx eslint --fix \"./src/**/*.js\" && npx eslint --fix \"./src/*.js\"",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "PUBLIC_URL=\"\" && npm run build",
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,6 +53,5 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.31.11"
-  },
-  "homepage": "https://broliver12.github.io/portfolio"
+  }
 }

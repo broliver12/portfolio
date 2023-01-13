@@ -6,7 +6,9 @@
   bottom: 0px;
   left: 44px;
   z-index: 999;
+  opacity: 0;
   animation: fadeInAnimation ease 2s forwards;
+  animation-delay: 2.9s;
 }
 
 .socialsBottomIcon {

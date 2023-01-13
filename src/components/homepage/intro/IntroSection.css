@@ -3,20 +3,52 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: 16vh;
   padding-bottom: 16vh;
   padding-left: 20vw;
   padding-right: 20vw;
-  animation: fadeInAnimation ease 2s forwards;
-  opacity: 0;
-  animation-delay: 0.5s;
+  padding-top: 16vh;
 }
 
-.intro {
+.introContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.salutation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.introStyle {
   font-size: 20px;
-  padding-left: 4px;
   font-family: var(--os-font-accent);
   color: var(--os-primary-light);
+}
+
+.blink {
+  animation: blink-animation 1.5s steps(2, start) infinite;
+}
+
+.intro-text {
+  font-size: 20px;
+  align-self: flex-start;
+  font-family: var(--os-font-accent);
+  color: var(--os-primary-light);
+  text-align: start;
+  width: 0ch;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-left: 0;
+  white-space: nowrap;
+}
+
+.intro-text.loading {
+  animation: typeIn 2s steps(14) forwards;
+  animation-delay: 0s;
 }
 
 .introNameHeader {
@@ -24,11 +56,17 @@
   font-family: var(--os-font-main-bold);
   color: var(--os-text-light);
   margin-top: 18px;
+  opacity: 0;
+  animation: fadeInFull ease 2s forwards;
+  animation-delay: 2.5s;
 }
 
 .introTitleHeader {
   font-size: 50px;
   color: var(--os-text-body);
+  opacity: 0;
+  animation: fadeInFull ease 2s forwards;
+  animation-delay: 2.7s;
 }
 
 .introDescription {
@@ -37,6 +75,9 @@
   color: var(--os-text-body);
   margin-top: 18px;
   max-width: 600px;
+  opacity: 0;
+  animation: fadeInFull ease 2s forwards;
+  animation-delay: 2.9s;
 }
 
 .employerLabel {
@@ -52,6 +93,9 @@
   margin-top: 36px;
   font-size: 18px;
   font-family: var(--os-font-accent);
+  opacity: 0;
+  animation: fadeInFull ease 2s forwards;
+  animation-delay: 3.1s;
 }
 
 .mainCta:hover {

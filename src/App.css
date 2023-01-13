@@ -19,7 +19,7 @@
   font-size: 3rem;
 }
 
-.loadingContainer      {
+.loadingContainer {
   background-color: var(--os-primary-dark);
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
 .loadingIcon {
   width: 250px;
   height: 250px;
-  animation: rotate 2.5s linear;
+  animation: rotate 2.5s linear forwards;
   color: var(--os-primary-light);
   animation-timing-function: cubic-bezier(1, 0, .5, 1);
 }
