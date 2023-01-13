@@ -19,11 +19,11 @@
 
   /* Black Theme */
   --os-primary-dark: #111111;
-  --os-primary-light: #f4f4f4;
+  --os-primary-light: #cccccc;
   --os-element: #f4f4f4;
   --os-cancel: #e41414;
   --os-transparent: #00000000;
-  --os-primary-light-transparent: #f4f4f433;
+  --os-primary-light-transparent: #66666633;
   --os-text-body: #d2d4da;
   --os-text-light: #f4f4f4; 
   

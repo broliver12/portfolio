@@ -135,8 +135,9 @@ function WorkSection() {
         <div className={'jobInfoContainer ' + jobs[selectedJobId].bgClass}>
           <div className="jobDetailsContainer">
             {dataRow(
-              `${jobs[selectedJobId].title} - `,
-              jobs[selectedJobId].company)
+              `${jobs[selectedJobId].title}, `,
+              jobs[selectedJobId].company,
+              false)
             }
             {jobs[selectedJobId].description.map((item, index) => {
               return <div
