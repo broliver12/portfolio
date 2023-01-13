@@ -8,9 +8,12 @@ import '../../Button.css'
  * @return {IntroSection}
  */
 function IntroSection() {
-  return (
-    <div id="intro" className="introContainer">
-      <div className="intro">Hi! My name is</div>
+  return (<div className="introContainer">
+    <div className="salutation">
+      <div className="intro-text loading">Hi! My name is</div>
+      <span className="introStyle blink">_</span>
+    </div>
+    <div id="intro" className="introContent">
       <div className="introNameHeader">Oliver Straszynski.</div>
       <div className="introTitleHeader">
         I&#39;m a Software Developer and Computer Scientist.
@@ -27,6 +30,7 @@ function IntroSection() {
         Resume
       </div>
     </div>
+  </div>
   )
 }
 
