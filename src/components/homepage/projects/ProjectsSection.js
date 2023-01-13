@@ -108,7 +108,7 @@ function ProjectsSection() {
           <div className="portfolioText">Portfolio</div>
           <div className="projectsTitleDecoration" />
         </div>
-        <div className="projectTileListContainer">
+        <div className="projectTileListContainer reveal fade-bottom">
           {projects
             .filter((item, index) => index <= shown)
             .map((proj, index) => (
@@ -125,7 +125,7 @@ function ProjectsSection() {
             ))}
         </div>
         <div
-          className="btn--outline showHideButton"
+          className="btn--outline showHideButton reveal fade-bottom"
           onClick={() => {
             if (shown > 2) {
               setShown(2)
