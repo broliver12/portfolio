@@ -1,7 +1,7 @@
 import React from 'react'
 import './ProjectTile.css'
-import IconFolder from '../../../images/icon/IconFolder'
-import IconGithub from '../../../images/icon/IconGithub'
+import IconFolder from '../../../icon/IconFolder'
+import IconGithub from '../../../icon/IconGithub'
 
 /**
  * Tile that displays Personal Project Information

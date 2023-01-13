@@ -26,10 +26,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "npx eslint --fix \"./src/**/*.js\"",
+    "lint": "npx eslint --fix \"./src/**/*.js\" && npx eslint --fix \"./src/*.js\"",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
