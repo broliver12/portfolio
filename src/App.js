@@ -9,7 +9,8 @@ import {
   Navigate
 } from 'react-router-dom'
 import Socials from './components/Socials'
-import IconLoading from './images/icon/IconLoading'
+import IconLoading from './icon/IconLoading'
+import reveal from './animations/ScrollListener'
 
 /**
  * Main App widget
@@ -29,6 +30,7 @@ function App() {
       await sleep(2500)
       setLoading(false)
     }
+    window.addEventListener('scroll', reveal)
     loadContent()
   }, [])
 

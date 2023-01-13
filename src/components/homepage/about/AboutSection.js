@@ -12,11 +12,11 @@ import '../../Button.css'
 function AboutSection(props) {
   return (
     <div id="about">
-      <div className="aboutSectionTitleBar">
+      <div id="about22" className="aboutSectionTitleBar">
         About Me
         <div className="aboutSectionTitleDecoration" />
       </div>
-      <div className="aboutSectionContainer">
+      <div className="aboutSectionContainer reveal fade-left">
         <div className="aboutSectionText">
           <div className="aboutSectionBody">
             Hello! My name is Oliver, and I&#39;m a friendly and enthusiastic
@@ -30,7 +30,7 @@ function AboutSection(props) {
             I joined Konrad Group because I saw an opportunity to work with
             world class clients, and join a team of truly awesome people. Four
             years later, I love the team and I&#39;m still learning every
-             sprint.
+            sprint.
           </div>
           <div className="aboutSectionBody">
             Outside of programming, I spend most of my time walking my dog,

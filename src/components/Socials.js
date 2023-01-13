@@ -1,7 +1,7 @@
 import React from 'react'
 import './Socials.css'
-import IconGitHub from '../images/icon/IconGithub'
-import IconLinkedIn from '../images/icon/IconLinkedin'
+import IconGitHub from '../icon/IconGithub'
+import IconLinkedIn from '../icon/IconLinkedin'
 
 /**
  * Social Media Icons
