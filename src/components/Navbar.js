@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import './Navbar.css'
 import './Socials.css'
 import './Button.css'
-import '../images/icon/IconLoading'
-import IconLoading from '../images/icon/IconLoading'
+import '../icon/IconLoading'
+import IconLoading from '../icon/IconLoading'
 
 /**
  * Top Navigation Bar & Drop down Menu
