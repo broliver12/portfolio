@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './Navbar.css'
 import './Socials.css'
 import './Button.css'
+import '../icon/IconLoading'
+import IconLoading from '../icon/IconLoading'
 
 /**
  * Top Navigation Bar & Drop down Menu
@@ -95,7 +97,7 @@ function Navbar({...props}) {
             document.documentElement.scrollTop = 0
           }}
         >
-          OS
+          <IconLoading/>
         </span>
         <div className="navbar-container">
           <div className="menu-icon" onClick={handleClick}>

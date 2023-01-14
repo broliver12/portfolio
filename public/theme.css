@@ -1,24 +1,64 @@
 :root {
-  /* Theme Colors */
-  --os-primary-dark: #07041D;
-  --os-primary-light: #8ED7F0;
-  --os-element: #8ED7F0;
-  --os-cancel: #ed6565;
-  --os-code: #73d373;
-  --os-accent: #bec2cb;
+
+
+  /* Dark Blue Theme */
+/* 
+  /* Theme Colors
+    --os-primary-dark: #07041D;
+    --os-primary-light: #8ED7F0;
+    --os-element: #8ED7F0;
+    --os-cancel: #ed6565;
+    --os-transparent: #00000000;
+    --os-primary-light-transparent: #8ED7F033;
+  
+    /* Text Colors
+    --os-text-body: #c8cdda;
+    --os-text-light: #ddd;
+
+ */
+
+  /* Black Theme */
+  --os-primary-dark: #111111;
+  --os-primary-light: #cccccc;
+  --os-element: #f4f4f4;
+  --os-cancel: #e41414;
   --os-transparent: #00000000;
-  --os-primary-light-transparent: #8ED7F033;
-  --os-primary-light-transparent2: #8ED7F033;
+  --os-primary-light-transparent: #66666633;
+  --os-text-body: #d2d4da;
+  --os-text-light: #f4f4f4; 
+  
+ 
 
-  /* Nice turquoise */
-  /* 42d8b5 */
+/* White Theme */
+/* 
+    /* Theme Colors 
+      --os-primary-dark: #f4f4f4;
+      --os-primary-light: #000000;
+      --os-element: #000000;
+      --os-cancel: #ad14e4;
+      --os-transparent: #00000000;
+      --os-primary-light-transparent: #00000033;
+    
+      /* Text Colors 
+      --os-text-body: #333333;
+      --os-text-light: #222222; 
+ */
 
-
-
-  /* Text Colors */
-  --os-text-dark: #222222;
-  --os-text-body: #c8cdda;
-  --os-text-light: #ddd;
+/* Light green Theme */
+/* 
+    /* Theme Colors 
+          --os-primary-dark: #96c7c7;
+          --os-primary-light: #19400a;
+          --os-element: #0c0941;
+          --os-cancel: #ad14e4;
+          --os-transparent: #00000000;
+          --os-primary-light-transparent: #19400a33;
+        
+          /* Text Colors 
+          --os-text-body: #32336d;
+          --os-text-light: #32336d;  
+          
+          */
 
   /* Fonts */
   --os-font-main: "calibre";
