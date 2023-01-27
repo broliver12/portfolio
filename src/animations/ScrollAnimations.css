@@ -81,3 +81,10 @@
         opacity: 1;
     }
 }
+
+@keyframes rainbow {
+    25% {color: #dc5432;}
+    50% {color: #29c5b0;}
+    75% {color: #2f43b8;}
+    100% {color: #b6af2d;}
+}

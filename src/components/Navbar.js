@@ -27,8 +27,7 @@ function Navbar({...props}) {
         document.getElementById(item.toLowerCase()).scrollIntoView()
       },
     }
-  }
-  )
+  })
 
   // useEffect(() => {
   //   async function sl() {

@@ -17,7 +17,6 @@ const IconGitHub = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="feather feather-github"
   >
     <title>GitHub</title>
     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37

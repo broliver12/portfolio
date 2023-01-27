@@ -84,8 +84,13 @@
 
 .employerLabel {
   padding-left: 5px;
-  padding-right: 5px;
-  color: var(--os-primary-light);
+  color: var(--os-employer);
+}
+
+.employerLabel:hover {
+  cursor: pointer;
+  color: #c8978b;
+  animation: rainbow ease 8s infinite;
 }
 
 .mainCta {
