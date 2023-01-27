@@ -18,7 +18,7 @@ import reveal from './animations/ScrollListener'
  * @return {App}
  */
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading] = useState(false)
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
@@ -27,8 +27,11 @@ function App() {
      * Show loading view
      */
     async function loadContent() {
+      document.location = '#'
+      await sleep(1000)
+      document.body.classList.add('no-scroll')
       await sleep(2500)
-      setLoading(false)
+      document.body.classList.remove('no-scroll')
     }
     window.addEventListener('scroll', reveal)
     loadContent()

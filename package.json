@@ -25,12 +25,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PUBLIC_URL=\"\" react-scripts start",
     "build": "PUBLIC_URL=\"\" react-scripts build",
     "test": "react-scripts test",
     "lint": "npx eslint --fix \"./src/**/*.js\" && npx eslint --fix \"./src/*.js\"",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "PUBLIC_URL=\"\" && npm run build",
     "deploy": "gh-pages -b gh-pages -d build"
   },
   "eslintConfig": {

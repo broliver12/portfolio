@@ -2,6 +2,10 @@ import React, {useState} from 'react'
 import './Navbar.css'
 import './Socials.css'
 import './Button.css'
+import '../icon/IconLoading'
+import IconLoading from '../icon/IconLoading'
+import li from '../content/ExternalLinks.js'
+import ct from '../content/NavbarContent'
 
 /**
  * Top Navigation Bar & Drop down Menu
@@ -13,33 +17,17 @@ function Navbar({...props}) {
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
+  const links = li()
+  const content = ct()
 
-  const standardButtonText = [
-    {
-      title: 'About',
+  const standardButtonText = content.buttons.map((item) => {
+    return {
+      title: item,
       callback: () => {
-        document.getElementById('about').scrollIntoView()
+        document.getElementById(item.toLowerCase()).scrollIntoView()
       },
-    },
-    {
-      title: 'Experience',
-      callback: () => {
-        document.getElementById('experience').scrollIntoView()
-      },
-    },
-    {
-      title: 'Portfolio',
-      callback: () => {
-        document.getElementById('projects').scrollIntoView()
-      },
-    },
-    {
-      title: 'Contact',
-      callback: () => {
-        document.getElementById('contact').scrollIntoView()
-      },
-    },
-  ]
+    }
+  })
 
   // useEffect(() => {
   //   async function sl() {
@@ -95,7 +83,7 @@ function Navbar({...props}) {
             document.documentElement.scrollTop = 0
           }}
         >
-          OS
+          <IconLoading />
         </span>
         <div className="navbar-container">
           <div className="menu-icon" onClick={handleClick}>
@@ -110,10 +98,10 @@ function Navbar({...props}) {
                 className="btn--outline innerItem resumeButton"
                 onClick={() => {
                   closeMobileMenu()
-                  window.open('ostraszynski_resume.pdf', '_blank')
+                  window.open(links.resume_url, '_blank')
                 }}
               >
-                Resume
+                {content.resume_cta}
               </div>
             </li>
           </ul>
