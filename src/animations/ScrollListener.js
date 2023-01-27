@@ -1,5 +1,5 @@
 /**
- * Trigger event on element scroll
+ * Trigger event on initial element scroll into view
  */
 export default function reveal() {
   const reveals = document.querySelectorAll('.reveal')

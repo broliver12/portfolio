@@ -2,6 +2,7 @@ import React from 'react'
 import './Socials.css'
 import IconGitHub from '../icon/IconGithub'
 import IconLinkedIn from '../icon/IconLinkedin'
+import li from '../content/ExternalLinks.js'
 
 /**
  * Social Media Icons
@@ -15,21 +16,23 @@ function Socials() {
     window.open(url, '_blank')
   }
 
+  const links = li()
   const socials = [
     {
       name: 'github',
       icon: () => {
         return <IconGitHub />
       },
-      clickAction: () => openInNewTab('https://www.github.com/broliver12/'),
+      clickAction: () => openInNewTab(links.github_url),
+      alt: 'Navigate to github'
     },
     {
       name: 'linkedin',
       icon: () => {
         return <IconLinkedIn />
       },
-      clickAction: () =>
-        openInNewTab('https://www.linkedin.com/in/ostraszynski/'),
+      clickAction: () => openInNewTab(links.linkedin_url),
+      alt: 'Navigate to linked in'
     },
   ]
 
@@ -40,7 +43,7 @@ function Socials() {
           <div
             key={index}
             className="socialsIcon"
-            alt={'Navigate to ' + item.name}
+            alt={item.alt}
             onClick={item.clickAction}
           >
             {item.icon()}

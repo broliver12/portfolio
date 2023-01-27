@@ -2,6 +2,7 @@ import React from 'react'
 import './ContactSection.css'
 import IconGitHub from '../../../icon/IconGithub'
 import IconLinkedIn from '../../../icon/IconLinkedin'
+import ct from '../../../content/ContactContent'
 
 /**
  * Contact Widget
@@ -30,24 +31,22 @@ function ContactSection() {
         openInNewTab('https://www.linkedin.com/in/ostraszynski/'),
     },
   ]
-
+  const content = ct()
   return (
     <div id="contact" className="contactSectionContainer">
-      <div className="contactTitleHeader">Want to get in touch?</div>
+      <div className="contactTitleHeader">{content.header}</div>
       <div className="contactParagraph">
-        Even though I&#39;m not currently
-        looking for a new position, my inbox is
-        always open!
+        {content.sub_header}
       </div>
 
       <div className="wrap">
         <a
-          href="mailto:oliver.strasz@gmail.com"
+          href={content.mail_to_url}
           rel="noopener noreferrer"
           target="_blank"
           className="btn--outline
         sendAnEmailButton">
-          Send an email
+          {content.cta}
         </a>
       </div>
       <div className="bottomSocialsContainer">
