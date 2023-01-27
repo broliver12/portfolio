@@ -18,16 +18,22 @@
  */
 
   /* Black Theme */
-  --os-primary-dark: #111111;
-  --os-primary-light: #cccccc;
-  --os-element: #f4f4f4;
+  --os-primary-dark: #0E1111;
+  --os-primary-light: #dddddd;
+  --os-element: #dddddd;
   --os-cancel: #e41414;
   --os-transparent: #00000000;
   --os-primary-light-transparent: #66666633;
-  --os-text-body: #d2d4da;
-  --os-text-light: #f4f4f4; 
+  --os-text-body: #dfe1e8;
+  --os-text-light: #dddddd; 
+
+  --os-employer: #8fcad8;
+
+  --os-dark-more-transparent: #00000000;
+  --os-dark-transparent: #00000055;
   
- 
+  --os-overlay-more-transparent: #00000099;
+  --os-overlay-transparent: #000000bb;
 
 /* White Theme */
 /* 

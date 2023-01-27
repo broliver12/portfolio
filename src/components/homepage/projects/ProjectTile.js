@@ -27,7 +27,7 @@ function ProjectTile(props) {
         <div className="linkBarSocials">
           <div
             className="githubIcon"
-            alt="Link to project github"
+            alt={`Navigate to project github - ${props.title}`}
             onClick={() => props.githubIconAction()}>
             <IconGithub />
           </div>
