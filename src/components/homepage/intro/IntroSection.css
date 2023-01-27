@@ -21,6 +21,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
 }
 
 .introStyle {
@@ -34,6 +35,7 @@
 }
 
 .intro-text {
+  display: block;
   font-size: 20px;
   align-self: flex-start;
   font-family: var(--os-font-accent);
@@ -41,7 +43,7 @@
   text-align: start;
   width: 0ch;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0;
   margin-left: 0;
   white-space: nowrap;
 }

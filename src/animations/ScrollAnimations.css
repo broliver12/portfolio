@@ -9,15 +9,15 @@
 
 .loading.fade-bottom {
     opacity: 0;
-    animation: fade-bottom 1s ease-in forwards;
+    animation: fade-bottom 0.75s ease-in forwards;
 }
 
 .loading.fade-left {
-    animation: fade-left 1.25s ease-in;
+    animation: fade-left 0.75s ease-in;
 }
 
 .loading.fade-right {
-    animation: fade-right 1.25s ease-in;
+    animation: fade-right 0.75s ease-in;
 }
 
 @keyframes fade-bottom {

@@ -1,6 +1,8 @@
 import React from 'react'
 import './IntroSection.css'
 import '../../Button.css'
+import ct from '../../../content/IntroContent.js'
+
 
 /**
  * Introduction Widget
@@ -8,26 +10,26 @@ import '../../Button.css'
  * @return {IntroSection}
  */
 function IntroSection() {
+  const content = ct()
   return (<div className="introContainer">
     <div className="salutation">
-      <div className="intro-text loading">Hi! My name is</div>
-      <span className="introStyle blink">_</span>
+      <div className="intro-text loading">{content.animated_text}</div>
+      <span className="introStyle blink">{content.animated_cursor}</span>
     </div>
     <div id="intro" className="introContent">
-      <div className="introNameHeader">Oliver Straszynski.</div>
+      <div className="introNameHeader">{content.name}</div>
       <div className="introTitleHeader">
-        I&#39;m a Software Developer and Computer Scientist.
+        {content.job_description}
       </div>
       <div className="introDescription">
-        I&#39;m currently working as an Android Developer, creating modern, user
-        centric mobile solutions with
-        <l className="employerLabel">Konrad Group.</l>I love learning about new
-        technology and solving complex problems.
+        {content.paragraph_section_1}
+        <l className="employerLabel">{content.employer}</l>
+        {content.paragraph_section_2}
       </div>
       <div
         className="btn--outline mainCta"
-        onClick={() => window.open('ostraszynski_resume.pdf', '_blank')}>
-        Resume
+        onClick={() => window.open(content.resume_url, '_blank')}>
+        {content.cta}
       </div>
     </div>
   </div>
