@@ -23,7 +23,9 @@ function IntroSection() {
       </div>
       <div className="introDescription">
         {content.paragraph_section_1}
-        <l className="employerLabel" onClick={() =>{ window.open("https://www.konrad.com/work", "_blank") }}>{content.employer}</l>
+        <l className="employerLabel" onClick={() =>{
+          window.open('https://www.konrad.com/work', '_blank')
+        }}>{content.employer}</l>
         {content.paragraph_section_2}
       </div>
       <div
