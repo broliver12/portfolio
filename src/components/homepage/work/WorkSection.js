@@ -41,17 +41,14 @@ function WorkSection() {
               selected={index === selectedJobId}
               title={job.title}
               company={job.company}
-              clickAction={() => setSelectedJobId(index)}
+              clickAction={() => {
+                setSelectedJobId(index)
+              }}
             />
           ))}
         </div>
         <div className={'jobInfoContainer ' + jobs[selectedJobId].bgClass}>
           <div className="jobDetailsContainer">
-            {dataRow(
-              `${jobs[selectedJobId].title}, `,
-              jobs[selectedJobId].company,
-              false)
-            }
             {jobs[selectedJobId].description.map((item, index) => {
               return <div
                 key={index}

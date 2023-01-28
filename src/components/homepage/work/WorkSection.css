@@ -37,6 +37,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  transition: all 2s ease-in;
 }
 
 .jobInfoContainer {
@@ -54,6 +55,7 @@
   padding-bottom: 16px;
   min-width: 750px;
   max-width: 750px;
+  transition: all 2s ease-in;
 }
 
 .chipotleDecoration {
@@ -66,6 +68,12 @@
   background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
     url(../../../../public/img/gm.png) no-repeat center center;
   background-size: 1750px;
+}
+
+.gmDecoration2 {
+  background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
+    url(../../../../public/img/gm.png) no-repeat left -300px top -250px;
+  background-size: 1500px;
 }
 
 .kgDecoration {
@@ -89,6 +97,8 @@
   flex-direction: column;
   margin-right: 16px;
   padding-right: 16px;
+  align-items: center;
+  margin-top: 16px;
 }
 
 .jobDates {
@@ -275,6 +285,24 @@
   .workContainer {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .chipotleDecoration {
+    background: linear-gradient(to top, var(--os-dark-more-transparent), var(--os-dark-transparent)),
+      url(../../../../public/img/chipotle.png) no-repeat top -80px center;
+    background-size: 1000px;
+  }
+
+  .gmDecoration {
+    background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
+      url(../../../../public/img/gm.png) no-repeat center center;
+    background-size: 1750px;
+  }
+
+  .kgDecoration {
+    background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
+      url(../../../../public/img/kg.png) no-repeat left -300px top -200px;
+    background-size: 2000px;
   }
 }
 
