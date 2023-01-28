@@ -56,7 +56,7 @@ const jobContent = () => {
       'end': '31/08/17',
       'stack': ['Visual Basic', 'Documentation'],
       'location': 'Oshawa',
-      'bgClass': 'gmDecoration',
+      'bgClass': 'gmDecoration2',
     },
     {
       'company': 'Chipotle',
