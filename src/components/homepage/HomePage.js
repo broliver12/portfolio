@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomePage.css'
-import '../../animations/ScrollAnimations.css'
+import '../../animations/Scroll.css'
+import '../../animations/Animations.css'
 import IntroSection from './intro/IntroSection'
 import AboutSection from './about/AboutSection'
 import WorkSection from './work/WorkSection'

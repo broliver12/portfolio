@@ -1,27 +1,38 @@
-.reveal.loading {
-    opacity: 1;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.95;
+    }
 }
 
-.reveal {
-    position: relative;
-    opacity: 0;
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.loading.fade-bottom {
-    opacity: 0;
-    animation: fade-bottom 0.75s ease-in forwards;
-}
+@keyframes rotateAndHide {
+    from {
+        transform: rotate(0deg);
+        opacity: 100;
+    }
 
-.loading.fade-left {
-    animation: fade-left 0.75s ease-in;
-}
-
-.loading.fade-right {
-    animation: fade-right 0.75s ease-in;
+    to {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
 }
 
 @keyframes fade-bottom {
     0% {
+        transform: translateY(200px);
         transform: translateY(200px);
         opacity: 0;
     }
@@ -83,8 +94,19 @@
 }
 
 @keyframes rainbow {
-    25% {color: #dc5432;}
-    50% {color: #29c5b0;}
-    75% {color: #2f43b8;}
-    100% {color: #b6af2d;}
+    25% {
+        color: #dc5432;
+    }
+
+    50% {
+        color: #29c5b0;
+    }
+
+    75% {
+        color: #2f43b8;
+    }
+
+    100% {
+        color: #b6af2d;
+    }
 }

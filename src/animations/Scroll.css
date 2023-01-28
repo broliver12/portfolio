@@ -1,0 +1,30 @@
+.reveal.loading {
+    opacity: 1;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.loading.fade-bottom {
+    opacity: 0;
+    -webkit-animation: fade-bottom 0.75s ease-in forwards;
+    -moz-animation: fade-bottom 0.75s ease-in forwards;
+    -o-animation: fade-bottom 0.75s ease-in forwards;
+    animation: fade-bottom 0.75s ease-in forwards;
+}
+
+.loading.fade-left {
+    -webkit-animation: fade-left 0.75s ease-in;
+    -moz-animation: fade-left 0.75s ease-in;
+    -o-animation: fade-left 0.75s ease-in;
+    animation: fade-left 0.75s ease-in;
+}
+
+.loading.fade-right {
+    -webkit-animation: fade-right 0.75s ease-in;
+    -moz-animation: fade-right 0.75s ease-in;
+    -o-animation: fade-right 0.75s ease-in;
+    animation: fade-right 0.75s ease-in;
+}

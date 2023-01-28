@@ -48,8 +48,6 @@
 }
 
 .profilePicture {
-  background: linear-gradient(to top,#00000000,#00000000),
-    url(../../../../public/img/oliver_headshot.jpg) no-repeat center center;
   background-size: contain;
   transition: all 0.15s ease-out;
   margin: 16px 96px 96px 96px;
@@ -58,9 +56,13 @@
   min-height: 296px;
   max-width: 296px;
   max-height: 296px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.profilePicture:hover {
+/* .profilePicture:hover {
   background: linear-gradient(to top, #00000000, #00000000),
     url(../../../../public/img/oliver_headshot.jpg) no-repeat center center;
   background-size: contain;
@@ -71,6 +73,43 @@
   min-height: 304px;
   max-width: 304px;
   max-height: 304px;
+} */
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.arrowIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: var(--os-transparent);
+  border: 1px solid var(--os-dark-transparent);
+  margin: 8px;
+  font-size: 16px;
+  box-shadow: 1px 1px 4px var(--os-dark-transparent);
+}
+
+.arrowIcon:hover {
+  background-color: var(--os-primary-light);
+  font-size: 20px;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.fa-arrow-right {
+  color: var(--os-dark-transparent);
+  padding: 8px;
+}
+
+.fa-arrow-left {
+  color: var(--os-dark-transparent);
+  font-size: 16px;
+  padding: 8px;
+  margin-left: 8px;
 }
 
 @media only screen and (max-width: 1500px) {

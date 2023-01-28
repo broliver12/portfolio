@@ -10,6 +10,7 @@ import ct from '../../../content/JobContent'
  */
 function WorkSection() {
   const [selectedJobId, setSelectedJobId] = useState(0)
+  const [show, setShow] = useState(0)
 
   const content = ct()
   const jobs = content.jobs
@@ -41,17 +42,14 @@ function WorkSection() {
               selected={index === selectedJobId}
               title={job.title}
               company={job.company}
-              clickAction={() => setSelectedJobId(index)}
+              clickAction={() => {
+                setSelectedJobId(index)
+              }}
             />
           ))}
         </div>
         <div className={'jobInfoContainer ' + jobs[selectedJobId].bgClass}>
           <div className="jobDetailsContainer">
-            {dataRow(
-              `${jobs[selectedJobId].title}, `,
-              jobs[selectedJobId].company,
-              false)
-            }
             {jobs[selectedJobId].description.map((item, index) => {
               return <div
                 key={index}
