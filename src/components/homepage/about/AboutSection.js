@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import './AboutSection.css'
 import '../../Button.css'
 import ct from '../../../content/AboutContent.js'
@@ -51,14 +51,14 @@ function AboutSection(props) {
             backgroundImage: 'url(' + images[sel] + ')'
           }}>
             <span className='arrowIcon fas fa-arrow-left'
-              style={{ opacity: (sel > 0) ? 1 : 0 }}
+              style={{opacity: (sel > 0) ? 1 : 0}}
               onClick={() => {
                 if (sel > 0) {
                   setSelected(sel - 1)
                 }
               }} />
             <span className='arrowIcon fas fa-arrow-right'
-              style={{ opacity: (sel < images.length - 1) ? 1 : 0 }}
+              style={{opacity: (sel < images.length - 1) ? 1 : 0}}
               onClick={() => {
                 if (sel < images.length - 1) {
                   setSelected(sel + 1)

@@ -70,6 +70,12 @@
   background-size: 1750px;
 }
 
+.gmDecoration2 {
+  background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
+    url(../../../../public/img/gm.png) no-repeat left -300px top -250px;
+  background-size: 1500px;
+}
+
 .kgDecoration {
   background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
     url(../../../../public/img/kg.png) no-repeat left -300px top -400px;

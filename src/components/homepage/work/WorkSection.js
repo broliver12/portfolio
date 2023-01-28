@@ -10,7 +10,6 @@ import ct from '../../../content/JobContent'
  */
 function WorkSection() {
   const [selectedJobId, setSelectedJobId] = useState(0)
-  const [show, setShow] = useState(0)
 
   const content = ct()
   const jobs = content.jobs
