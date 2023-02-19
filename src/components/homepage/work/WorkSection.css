@@ -72,7 +72,7 @@
 
 .gmDecoration2 {
   background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
-    url(../../../../public/img/gm.png) no-repeat left -300px top -250px;
+    url(../../../../public/img/gm.png) no-repeat left -300px top -100px;
   background-size: 1500px;
 }
 
@@ -273,9 +273,13 @@
     min-width: none;
   }
 
-  .jobTableContainer {
-    padding-left: 72px;
-  }
+  .jobInfoContainer {
+    padding-right: 0px;
+    }
+
+    .descLineSpace {
+      padding-right: 0px;
+    }
 
   .jobTableContainer {
     padding-left: 0px;

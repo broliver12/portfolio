@@ -45,18 +45,6 @@
   animation-timing-function: cubic-bezier(1, 0, .5, 1);
 }
 
-@keyframes rotateAndHide {
-  from {
-    transform: rotate(0deg);
-    opacity: 100;
-  }
-
-  to {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-
 @font-face {
   font-family: "calibre-light";
   src: url("./fonts/Calibre/Calibre-Light.ttf");
