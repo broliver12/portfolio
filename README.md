@@ -4,7 +4,7 @@ A lightweight React site that works as a modular & scalable personal portfolio.
 
 ## Design
 
-Design inspired (heavily) by @BrittanyChiang's [Portfolio V4](https://github.com/bchiang7/v4).
+Design inspired by @BrittanyChiang's [Portfolio V4](https://github.com/bchiang7/v4).
 
 All components & animations were created from scratch using React, CSS, Figma.
 

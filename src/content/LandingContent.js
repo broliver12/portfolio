@@ -1,4 +1,4 @@
-const introContent = () => {
+const landingContent = () => {
   return {
     'animated_text': 'Hi! My name is',
     'animated_cursor': '_',
@@ -12,4 +12,4 @@ const introContent = () => {
   }
 }
 
-export default introContent
+export default landingContent

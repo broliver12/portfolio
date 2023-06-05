@@ -32,7 +32,10 @@
   min-height: 100vh;
 }
 
-
+.homeScreenContainer {
+  background-color: var(--os-primary-dark);
+  padding-bottom: 8px;
+}
 
 .loadingIcon {
   width: 250px;
@@ -43,18 +46,6 @@
   animation: rotateAndHide 2.5s linear forwards;
   color: var(--os-primary-light);
   animation-timing-function: cubic-bezier(1, 0, .5, 1);
-}
-
-@keyframes rotateAndHide {
-  from {
-    transform: rotate(0deg);
-    opacity: 100;
-  }
-
-  to {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
 }
 
 @font-face {

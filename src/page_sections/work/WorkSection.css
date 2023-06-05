@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   padding-bottom: 16vh;
   padding-top: 8vh;
-  padding-right: 200px;
+  padding-left: 300px;
 }
 
 .workTitleBar {
   font-size: 44px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   color: var(--os-text-light);
   text-align: flex-start;
   white-space: nowrap;
@@ -23,9 +23,10 @@
 }
 
 .workTitleDecoration {
-  width: 735px;
+  width: 720px;
   height: 1px;
   margin-left: 16px;
+  margin-right: 100px;
   margin-bottom: 8px;
   background-color: var(--os-primary-light);
 }
@@ -60,25 +61,25 @@
 
 .chipotleDecoration {
   background: linear-gradient(to top, var(--os-dark-more-transparent), var(--os-dark-transparent)),
-    url(../../../../public/img/chipotle.png) no-repeat top -200px center;
+    url(../../../public/img/chipotle.png) no-repeat top -200px center;
   background-size: 1000px;
 }
 
 .gmDecoration {
   background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
-    url(../../../../public/img/gm.png) no-repeat center center;
+    url(../../../public/img/gm.png) no-repeat center center;
   background-size: 1750px;
 }
 
 .gmDecoration2 {
   background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
-    url(../../../../public/img/gm.png) no-repeat left -300px top -250px;
+    url(../../../public/img/gm.png) no-repeat left -300px top -100px;
   background-size: 1500px;
 }
 
 .kgDecoration {
   background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
-    url(../../../../public/img/kg.png) no-repeat left -300px top -400px;
+    url(../../../public/img/kg.png) no-repeat left -300px top -400px;
   background-size: 2000px;
 }
 
@@ -183,16 +184,17 @@
   .workContainer {
     padding-left: 164px;
     padding-right: 0px;
-    margin-right: 100px;
+    margin-right: 32px;
   }
 
   .workTitleDecoration {
     width: 624px;
+        max-width: 624px;
+          margin-right: 0px;
   }
 
   .workTitleBar {
     padding-right: 32px;
-    margin-left: 196px;
   }
 
   .jobInfoContainer {
@@ -273,9 +275,13 @@
     min-width: none;
   }
 
-  .jobTableContainer {
-    padding-left: 72px;
-  }
+  .jobInfoContainer {
+    padding-right: 0px;
+    }
+
+    .descLineSpace {
+      padding-right: 0px;
+    }
 
   .jobTableContainer {
     padding-left: 0px;
@@ -289,19 +295,19 @@
 
   .chipotleDecoration {
     background: linear-gradient(to top, var(--os-dark-more-transparent), var(--os-dark-transparent)),
-      url(../../../../public/img/chipotle.png) no-repeat top -80px center;
+      url(../../../public/img/chipotle.png) no-repeat top -80px center;
     background-size: 1000px;
   }
 
   .gmDecoration {
     background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
-      url(../../../../public/img/gm.png) no-repeat center center;
+      url(../../../public/img/gm.png) no-repeat center center;
     background-size: 1750px;
   }
 
   .kgDecoration {
     background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
-      url(../../../../public/img/kg.png) no-repeat left -300px top -200px;
+      url(../../../public/img/kg.png) no-repeat left -300px top -200px;
     background-size: 2000px;
   }
 }
