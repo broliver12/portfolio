@@ -7,6 +7,7 @@ import li from '../../content/ExternalLinks.js'
 /**
  * Social Media Icons when screen width is larger than 760px
  *
+ * @arg {any} props
  *
  * @return {Socials}
  */
