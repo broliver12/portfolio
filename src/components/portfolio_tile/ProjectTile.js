@@ -1,7 +1,7 @@
 import React from 'react'
 import './ProjectTile.css'
-import IconFolder from '../../../icon/IconFolder'
-import IconGithub from '../../../icon/IconGithub'
+import IconFolder from '../../icon/IconFolder'
+import IconGithub from '../../icon/IconGithub'
 
 /**
  * Tile that displays Personal Project Information
@@ -13,11 +13,7 @@ import IconGithub from '../../../icon/IconGithub'
 function ProjectTile(props) {
   return (
     <div
-      className={
-        props.selected === true ?
-          'projectTileContainer' :
-          'projectTileContainer'
-      }
+      className="projectTileContainer"
       onClick={() => props.clickAction()}
     >
       <div className="linkBar">

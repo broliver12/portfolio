@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import JobTile from './JobTile'
+import JobTile from '../../components/professional_experience_tile/JobTile'
 import './WorkSection.css'
-import ct from '../../../content/JobContent'
+import ct from '../../content/JobContent'
 
 /**
  * Professional Experience Widget

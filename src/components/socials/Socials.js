@@ -1,17 +1,17 @@
 import React from 'react'
 import './Socials.css'
-import IconGitHub from '../icon/IconGithub'
-import IconLinkedIn from '../icon/IconLinkedin'
-import li from '../content/ExternalLinks.js'
+import IconGitHub from '../../icon/IconGithub'
+import IconLinkedIn from '../../icon/IconLinkedin'
+import li from '../../content/ExternalLinks.js'
 
 /**
- * Social Media Icons
+ * Social Media Icons when screen width is larger than 760px
  *
- * Bottom Left (Desktop) or Page Bottom (Mobile)
+ * @arg {any} props
  *
  * @return {Socials}
  */
-function Socials() {
+function Socials(props) {
   const openInNewTab = (url) => {
     window.open(url, '_blank')
   }
@@ -37,7 +37,7 @@ function Socials() {
   ]
 
   return (
-    <div className="socialsWrapper">
+    <div className={props.containerStyle}>
       {socials.map((item, index) => {
         return (
           <div

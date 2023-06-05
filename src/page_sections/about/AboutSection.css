@@ -23,13 +23,14 @@
   text-align: flex-start;
   white-space: nowrap;
   margin-top: 64px;
+  margin-left: 64px;
   padding-top: 16vh;
   margin-top: 18px;
 }
 
 .aboutSectionTitleDecoration {
   width: 100%;
-  max-width: 850px;
+  max-width: 900px;
   height: 1px;
   margin-left: 16px;
   margin-bottom: 8px;

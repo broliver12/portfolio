@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import './Navbar.css'
-import './Socials.css'
-import './Button.css'
-import '../icon/IconLoading'
-import IconLoading from '../icon/IconLoading'
-import li from '../content/ExternalLinks.js'
-import ct from '../content/NavbarContent'
+import '../navbar/Navbar.css'
+import '../socials/Socials.css'
+import '../button/Button.css'
+import '../../icon/IconLoading'
+import IconLoading from '../../icon/IconLoading'
+import li from '../../content/ExternalLinks.js'
+import ct from '../../content/NavbarContent'
 
 /**
  * Top Navigation Bar & Drop down Menu
@@ -95,7 +95,7 @@ function Navbar({...props}) {
             )}
             <li className="nav-item">
               <div
-                className="btn--outline innerItem resumeButton"
+                className="outlinedButtonComponent innerItem resumeButton"
                 onClick={() => {
                   closeMobileMenu()
                   window.open(links.resume_url, '_blank')
