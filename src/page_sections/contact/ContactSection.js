@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './ContactSection.css'
 import IconGitHub from '../../icon/IconGithub'
 import IconLinkedIn from '../../icon/IconLinkedin'
@@ -18,7 +18,8 @@ function ContactSection() {
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
-  const [buttonClassName, setButtonClassName] = useState('outlinedButtonComponent copyBtn')
+  const [buttonClassName, setButtonClassName] =
+    useState('outlinedButtonComponent copyBtn')
 
   const socials = [
     {
@@ -44,7 +45,7 @@ function ContactSection() {
 
       <div className="wrap">
         <a className="textWrapper">
-        Reach me by email at
+          Reach me by email at
         </a>
         <a className="email">
           oliver.strasz@gmail.com
@@ -63,7 +64,9 @@ function ContactSection() {
           }}
           className={buttonClassName}>
           {
-            (buttonClassName == 'iconWrapper') ? <a className='copySuccessBtn'><IconCopiedSuccessfully/></a> : <>{content.cta}</>
+            (buttonClassName == 'iconWrapper') ?
+              <a className='copySuccessBtn'><IconCopiedSuccessfully /></a> :
+              <>{content.cta}</>
           }
         </c>
       </div>
