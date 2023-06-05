@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import './ProjectsSection.css'
-import '../../Button.css'
-import ProjectTile from './ProjectTile'
-import li from '../../../content/ExternalLinks.js'
-import ct from '../../../content/PortfolioContent.js'
+import '../../components/button/Button.css'
+import ProjectTile from '../../components/portfolio_tile/ProjectTile'
+import li from '../../content/ExternalLinks.js'
+import ct from '../../content/PortfolioContent.js'
 
 
 /**
@@ -45,7 +45,7 @@ function ProjectsSection() {
       <div className="projectsSectionContainer">
         <div className="projectsTitleBar">
           <div className="projectsTitleDecoration" />
-          <div className="portfolioText">Portfolio</div>
+          <div className="portfolioText">Personal Projects</div>
           <div className="projectsTitleDecoration" />
         </div>
         <div className="projectTileListContainer reveal fade-bottom">
@@ -65,7 +65,7 @@ function ProjectsSection() {
             ))}
         </div>
         <div
-          className="btn--outline showHideButton reveal fade-bottom"
+          className="outlinedButtonComponent showHideButton reveal fade-bottom"
           onClick={() => {
             if (shown > 2) {
               setShown(2)

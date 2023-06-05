@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './AboutSection.css'
-import '../../Button.css'
-import './Cube.css'
-import ct from '../../../content/AboutContent.js'
+import '../../components/button/Button.css'
+import '../../components/image_cube/Cube.css'
+import ct from '../../content/AboutContent.js'
 
 /**
  * About Widget

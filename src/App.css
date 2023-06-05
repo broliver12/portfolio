@@ -32,7 +32,9 @@
   min-height: 100vh;
 }
 
-
+.homeScreenContainer {
+  background-color: var(--os-primary-dark);
+}
 
 .loadingIcon {
   width: 250px;

@@ -1,15 +1,14 @@
 import React from 'react'
-import './IntroSection.css'
-import '../../Button.css'
-import ct from '../../../content/IntroContent.js'
-
+import './LandingSection.css'
+import '../../components/button/Button.css'
+import ct from '../../content/LandingContent.js'
 
 /**
  * Introduction Widget
  *
- * @return {IntroSection}
+ * @return {LandingSection}
  */
-function IntroSection() {
+function LandingSection() {
   const content = ct()
   return (<div className="introContainer">
     <div className="salutation">
@@ -29,7 +28,7 @@ function IntroSection() {
         {content.paragraph_section_2}
       </div>
       <div
-        className="btn--outline mainCta"
+        className="outlinedButtonComponent mainCta"
         onClick={() => window.open(content.resume_url, '_blank')}>
         {content.cta}
       </div>
@@ -38,4 +37,4 @@ function IntroSection() {
   )
 }
 
-export default IntroSection
+export default LandingSection

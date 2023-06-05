@@ -1,8 +1,8 @@
 .socialsWrapper {
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
   bottom: 0px;
   left: 44px;
   z-index: 999;
@@ -13,7 +13,6 @@
   animation: fadeInAnimation ease 2s forwards;
   animation-delay: 2.9s;
 }
-
 
 .socialsBottomIcon {
   width: 2px;
@@ -30,10 +29,6 @@
   margin-top: 8px;
 }
 
-.socialsIcon>* {
-  cursor: pointer;
-}
-
 .socialsIcon:hover {
   cursor: pointer;
   height: 34px;
@@ -42,7 +37,9 @@
   margin-top: 5px;
 }
 
-
+.socialsIcon>* {
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 760px) {
   .socialsWrapper {

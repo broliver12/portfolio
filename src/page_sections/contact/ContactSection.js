@@ -1,8 +1,9 @@
 import React from 'react'
 import './ContactSection.css'
-import IconGitHub from '../../../icon/IconGithub'
-import IconLinkedIn from '../../../icon/IconLinkedin'
-import ct from '../../../content/ContactContent'
+import IconGitHub from '../../icon/IconGithub'
+import IconLinkedIn from '../../icon/IconLinkedin'
+import ct from '../../content/ContactContent'
+import li from '../../content/ExternalLinks.js'
 
 /**
  * Contact Widget
@@ -20,7 +21,7 @@ function ContactSection() {
       icon: () => {
         return <IconGitHub />
       },
-      clickAction: () => openInNewTab('https://www.github.com/broliver12/'),
+      clickAction: () => openInNewTab(li.github_url),
     },
     {
       name: 'linkedin',
@@ -28,7 +29,7 @@ function ContactSection() {
         return <IconLinkedIn />
       },
       clickAction: () =>
-        openInNewTab('https://www.linkedin.com/in/ostraszynski/'),
+        openInNewTab(li.linkein_url),
     },
   ]
   const content = ct()
@@ -44,7 +45,7 @@ function ContactSection() {
           href={content.mail_to_url}
           rel="noopener noreferrer"
           target="_blank"
-          className="btn--outline
+          className="outlinedButtonComponent
         sendAnEmailButton">
           {content.cta}
         </a>
