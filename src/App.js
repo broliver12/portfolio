@@ -25,6 +25,8 @@ import ContactSection from './page_sections/contact/ContactSection'
  */
 function App() {
   const [loading] = useState(false)
+  const [socialsStyle, setSocialsStyle] = useState('socialsWrapper')
+
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
@@ -34,10 +36,12 @@ function App() {
      */
     async function loadContent() {
       document.location = '#'
-      await sleep(1000)
+      await sleep(500)
       document.body.classList.add('no-scroll')
       await sleep(2500)
       document.body.classList.remove('no-scroll')
+      await sleep(2500)
+      setSocialsStyle('socialsWrapperNoFadeIn')
     }
     window.addEventListener('scroll', reveal)
     loadContent()
@@ -52,7 +56,7 @@ function App() {
   ) : (
     <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
-      <Socials />
+      <Socials containerStyle={socialsStyle}/>
       <Routes>
         <Route path="/" exact element={
           <div className="homeScreenContainer">

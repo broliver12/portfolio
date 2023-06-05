@@ -189,6 +189,8 @@
 
   .workTitleDecoration {
     width: 624px;
+        max-width: 624px;
+          margin-right: 0px;
   }
 
   .workTitleBar {

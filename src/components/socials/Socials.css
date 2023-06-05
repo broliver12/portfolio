@@ -14,6 +14,16 @@
   animation-delay: 2.9s;
 }
 
+.socialsWrapperNoFadeIn {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0px;
+  left: 44px;
+  z-index: 999;
+}
+
 .socialsBottomIcon {
   width: 2px;
   height: 72px;
@@ -42,6 +52,10 @@
 }
 
 @media only screen and (max-width: 760px) {
+  .socialsWrapperNoFadeIn {
+    display: none;
+  }
+
   .socialsWrapper {
     display: none;
   }

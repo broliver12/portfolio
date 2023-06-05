@@ -25,21 +25,81 @@
   max-width: 500px;
 }
 
-.sendAnEmailButton {
-  padding: 16px;
-  padding-left: 48px;
-  padding-right: 48px;
-  font-size: 18px;
-  font-family: var(--os-font-accent);
+.iconWrapper {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    animation: changeToBlue 2s;
+    background-color: var(--os-employer);
+    border: 1px solid var(--os-primary-dark);
+      border-radius: 8px;
+}
+
+.copyBtn {
+  margin-left: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  padding-top: 12px;
+  text-align: center;
+  background-color: var(--os-transparent);
+  font-family: var(--os-font-main-light);
+}
+
+.copySuccessBtn {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+}
+
+.textWrapper {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-family: var(--os-font-main-light);
+}
+
+.copySuccessBtn>*{
+    color: black;
+}
+
+@keyframes changeToBlue {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.email {
+  margin-left: 8px;
+  font-size: 28px;
+  color: var(--os-employer);
+  margin-top: 8px;
+    margin-bottom: 2px;
 }
 
 .wrap {
-  margin-top: 36px;
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 28px;
+  font-family: var(--os-font-main-light);
+  color: var(--os-text-light);
 }
 
 .wrap>* {
-  pointer-events: auto;
-  cursor: pointer;
+  text-align: center;
 }
 
 .bottomSocialsContainer {
@@ -60,29 +120,34 @@
   .contactSectionContainer {
     padding-left: 15vw;
     padding-right: 15vw;
+    padding-bottom: 32px;
+    margin: 8px;
   }
 
   .contactTitleHeader {
     font-size: 64px;
   }
+
+    .wrap {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px;
+    }
+
+    .copyBtn {
+      margin: 16px;
+    }
+
+    .iconWrapper {
+        margin: 16px;
+    }
 }
 
 @media only screen and (max-width: 960px) {
-  .contactSectionContainer {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
 
   .contactTitleHeader {
     font-size: 54px;
-  }
-
-  .sendAnEmailButton {
-    padding: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-top: 24px;
-    font-size: 14px;
   }
 }
 
@@ -90,22 +155,25 @@
   .contactSectionContainer {
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 32px;
+    margin: 8px;
   }
+
+    .email {
+      font-size: 22px;
+    }
+
+    .textWrapper{
+      font-size: 22px;
+    } 
 
   .bottomSocialsContainer {
     display: flex;
     flex-direction: row;
-    padding-top: 8vh;
+    padding-top: 4vh;
   }
 
   .contactTitleHeader {
     font-size: 44px;
-  }
-
-  .contactParagraph {
-    max-width: 360px;
-    font-size: 18px;
   }
 }
 

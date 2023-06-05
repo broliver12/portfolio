@@ -10,7 +10,7 @@ import li from '../../content/ExternalLinks.js'
  *
  * @return {Socials}
  */
-function Socials() {
+function Socials(props) {
   const openInNewTab = (url) => {
     window.open(url, '_blank')
   }
@@ -36,7 +36,7 @@ function Socials() {
   ]
 
   return (
-    <div className="socialsWrapper">
+    <div className={props.containerStyle}>
       {socials.map((item, index) => {
         return (
           <div

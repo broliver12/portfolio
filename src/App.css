@@ -34,6 +34,7 @@
 
 .homeScreenContainer {
   background-color: var(--os-primary-dark);
+  padding-bottom: 8px;
 }
 
 .loadingIcon {
