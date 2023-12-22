@@ -3,7 +3,7 @@ const navbarContent = () => {
     'buttons': [
       'About',
       'Experience',
-      'Portfolio',
+      'Projects',
       'Contact'
     ],
     'resume_cta': 'Resume'
