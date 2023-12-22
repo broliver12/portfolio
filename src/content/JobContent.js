@@ -3,16 +3,19 @@ const jobContent = () => {
     'title': 'Professional Experience',
     'jobs': [{
       'company': 'Konrad Group',
-      'title': 'Software Developer',
+      'title': 'Sr. Software Developer',
       'description': [
         {
-          'body': 'Over my four years at Konrad I\'ve worked with some of our largest clients to transform both their mobile technology, and digital presence.',
+          'body': 'Over my five years at Konrad I\'ve worked with some of our largest clients to transform their mobile technology and digital presence.',
         },
         {
           'body': 'As an Android developer I work primarily in Kotlin and Java. However, I\'ve also had the opportunity to explore front-end technologies like Flutter and React.',
         },
         {
           'body': 'My favorite part about software consulting is that I\'m constantly learning, and being put into unique and challenging situations.',
+        },
+        {
+          'body': 'Previously: Software Developer, Associate Software Developer',
         },
       ],
       'start': '11/09/18',
@@ -43,13 +46,13 @@ const jobContent = () => {
       'title': 'Engineering Intern',
       'description': [
         {
-          'body': 'I was tasked with developing an app for controlling the robotics and conveyor systems at GM Oshawa.',
+          'body': 'Developed an app for controlling the robot and conveyor systems at GM Oshawa.',
         },
         {
-          'body': 'The old touchpads needed to be replaced - but it was too costly to re-train all the employees to use the default software on the new touchpads.',
+          'body': 'The old touchpads needed to be replaced - but re-training staff was too expensive.',
         },
         {
-          'body': 'I independently created a protocol that converted the robot control files to the new system\'s expected format. This saved countless hours of manual work. I also created a complete working user interface that was an exact visual copy of the legacy system, in order to facilitate the transition for robot control staff.',
+          'body': 'I created a protocol for converting robot control data to the new system\'s expected format. This saved countless hours of manual work. I also created a custom UI that mimicked the legacy system, in order to make the transition easier for robot control staff.',
         },
       ],
       'start': '31/05/17',
@@ -69,7 +72,7 @@ const jobContent = () => {
           'body': 'Working in a busy kitchen taught me about the importance of organization, communication and teamwork.',
         },
         {
-          'body': 'By continuously improving our processes, we were able to serve delicious food, and keep the restaurant running efficiently.'
+          'body': 'By continuously improving our processes, we were able to serve great food, and keep the restaurant running efficiently.'
         }
       ],
       'start': '31/05/16',

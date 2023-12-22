@@ -41,7 +41,7 @@ function ProjectsSection() {
   const [shown, setShown] = useState(2)
 
   return (
-    <div id="portfolio">
+    <div id="projects">
       <div className="projectsSectionContainer">
         <div className="projectsTitleBar">
           <div className="projectsTitleDecoration" />
