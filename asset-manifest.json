@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f99f743a.css",
-    "main.js": "/static/js/main.f804d17a.js",
+    "main.css": "/static/css/main.3fa18105.css",
+    "main.js": "/static/js/main.fcd4d523.js",
     "static/media/chipotle.png": "/static/media/chipotle.3e4824aed43a0c666b29.png",
     "static/media/SFMono-Medium.ttf": "/static/media/SFMono-Medium.26e2b78a923bee127a72.ttf",
     "static/media/SFMono-Regular.ttf": "/static/media/SFMono-Regular.04c2f44851d26268afe8.ttf",
@@ -11,11 +11,11 @@
     "static/media/Calibre-Light.ttf": "/static/media/Calibre-Light.747b2e5e6d3f057e2b12.ttf",
     "static/media/Calibre-Regular.ttf": "/static/media/Calibre-Regular.5953fa35a6c05f584064.ttf",
     "index.html": "/index.html",
-    "main.f99f743a.css.map": "/static/css/main.f99f743a.css.map",
-    "main.f804d17a.js.map": "/static/js/main.f804d17a.js.map"
+    "main.3fa18105.css.map": "/static/css/main.3fa18105.css.map",
+    "main.fcd4d523.js.map": "/static/js/main.fcd4d523.js.map"
   },
   "entrypoints": [
-    "static/css/main.f99f743a.css",
-    "static/js/main.f804d17a.js"
+    "static/css/main.3fa18105.css",
+    "static/js/main.fcd4d523.js"
   ]
 }
