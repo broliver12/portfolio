@@ -2,6 +2,29 @@ const jobContent = () => {
   return {
     'title': 'Professional Experience',
     'jobs': [{
+      'company': 'Flex Artificial Intelligence',
+      'title': 'Senior Android Engineer',
+      'description': [
+        {
+          'body': 'Lead engineer building Flex Fitness for Android, a workout companion and social media app.',
+        },
+        {
+          'body': 'I\'m responsible for app architecture, agile planning and estimation, team management, and dev ops.',
+        },
+        {
+          'body': 'Our app is built with Kotlin, Jetpack Compose, and Firebase.',
+        },
+        {
+          'body': 'I enforce modern Android standards including Flow, Coroutines, MVVM, and Clean Architecture.',
+        },
+      ],
+      'start': '01/01/24',
+      'end': '-',
+      'stack': ['Kotlin', 'Jetpack Compose', 'Firebase', 'Flow', 'Coroutines', 'MVVM', 'Clean Architecture', 'Agile'],
+      'location': 'Ottawa, ON',
+      'bgClass': 'flexDecoration',
+    },
+    {
       'company': 'Konrad Group',
       'title': 'Sr. Software Developer',
       'description': [
@@ -19,7 +42,7 @@ const jobContent = () => {
         },
       ],
       'start': '11/09/18',
-      'end': '-',
+      'end': '31/12/24',
       'stack': ['Kotlin', 'Java', 'Android', 'Git', 'Jira', 'Agile'],
       'location': 'Toronto',
       'bgClass': 'kgDecoration',

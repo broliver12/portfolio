@@ -83,6 +83,12 @@
   background-size: 2000px;
 }
 
+.flexDecoration {
+  background: linear-gradient(to top, var(--os-overlay-more-transparent), var(--os-overlay-transparent)),
+    url(../../../public/img/flexwordmark.png) no-repeat left -200px top -100px;
+  background-size: 1200px;
+}
+
 .jobListContainer {
   display: flex;
   flex-direction: column;

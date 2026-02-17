@@ -23,7 +23,7 @@ function LandingSection() {
       <div className="introDescription">
         {content.paragraph_section_1}
         <l className="employerLabel" onClick={() =>{
-          window.open('https://www.konrad.com/work', '_blank')
+          window.open('https://flexfitnessapp.com/', '_blank')
         }}>{content.employer}</l>
         {content.paragraph_section_2}
       </div>

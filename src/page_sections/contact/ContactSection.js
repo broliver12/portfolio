@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import './ContactSection.css'
 import IconGitHub from '../../icon/IconGithub'
 import IconLinkedIn from '../../icon/IconLinkedin'
