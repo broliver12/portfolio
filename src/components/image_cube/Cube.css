@@ -6,6 +6,8 @@
     perspective: 480px;
     background-color: #0E1111;
     box-shadow: 24px #cccccc22;
+    contain: layout;
+    isolation: isolate;
 }
 
 .cube {
@@ -14,8 +16,9 @@
     position: relative;
     transform-style: preserve-3d;
     transform: translateZ(-120px);
-    transition: transform 1s;
+    transition: transform 700ms;
     transition-timing-function: cubic-bezier(0.1, 0.4, 1.0, 0.8);
+    transform-origin: center center;
 }
 
 .cube.show-front {
@@ -53,6 +56,9 @@
     font-weight: bold;
     color: white;
     text-align: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .cube__face--front {

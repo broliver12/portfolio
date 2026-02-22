@@ -70,6 +70,9 @@
   /* Fonts */
   --os-font-main: "calibre";
   --os-font-main-bold: "calibre-bold";
+  --os-font-main-semibold: "calibre-semibold";
+  --os-font-main-medium: "calibre-medium";
+
   --os-font-main-light: "calibre-light";
   --os-font-accent: "sfmono";
   --os-font-accent-light: "sfmono-light";

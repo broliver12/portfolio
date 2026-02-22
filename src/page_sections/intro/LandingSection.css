@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-bottom: 16vh;
+  min-height: 100svh;
+  box-sizing: border-box;
+  padding-bottom: 0vh;
   padding-left: 20vw;
   padding-right: 20vw;
   padding-top: 16vh;
@@ -59,6 +61,11 @@
   animation-delay: 0s;
 }
 
+.intro-text.static {
+  width: auto;
+  overflow: visible;
+}
+
 .introNameHeader {
   font-size: 84px;
   font-family: var(--os-font-main-bold);
@@ -83,12 +90,30 @@
   animation-delay: 2.7s;
 }
 
+.introRoleText {
+  display: inline-block;
+  white-space: nowrap;
+  transition: opacity 0.22s ease-in-out;
+}
+
+.introRoleVisible {
+  opacity: 1;
+}
+
+.introRoleHidden {
+  opacity: 0;
+}
+
+.introRoleAccent {
+  color: var(--os-employer);
+}
+
 .introDescription {
   font-size: 22px;
   font-family: var(--os-font-main-light);
   color: var(--os-text-body);
   margin-top: 18px;
-  max-width: 600px;
+  max-width: 900px;
   opacity: 0;
   -webkit-animation: fadeInFull ease 2s forwards;
   -moz-animation: fadeInFull ease 2s forwards;
@@ -128,6 +153,14 @@
 
 .mainCta:hover {
   cursor: pointer;
+}
+
+.noAnimation {
+  opacity: 1;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
 }
 
 @media only screen and (max-width: 1200px) {

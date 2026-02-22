@@ -2,6 +2,7 @@ import React from 'react'
 import './ProjectTile.css'
 import IconFolder from '../../icon/IconFolder'
 import IconGithub from '../../icon/IconGithub'
+import CardSurface from '../card_surface/CardSurface'
 
 /**
  * Tile that displays Personal Project Information
@@ -12,7 +13,7 @@ import IconGithub from '../../icon/IconGithub'
  */
 function ProjectTile(props) {
   return (
-    <div
+    <CardSurface
       className="projectTileContainer"
       onClick={() => props.clickAction()}
     >
@@ -46,7 +47,7 @@ function ProjectTile(props) {
           <div key={index} className="languageItem">{item}</div>
         ))}
       </div>
-    </div>
+    </CardSurface>
   )
 }
 

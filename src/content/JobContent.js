@@ -6,7 +6,10 @@ const jobContent = () => {
       'title': 'Senior Android Engineer',
       'description': [
         {
-          'body': 'Lead engineer building Flex Fitness for Android, a workout companion and social media app.',
+          'body': 'Lead engineer building Flex Fitness for Android, an intelligent workout companion and social media app.',
+        },
+           {
+          'body': 'I deliver quickly with low overhead by enforcing Android standards including Flow, Coroutines, MVVM, and Clean Architecture.',
         },
         {
           'body': 'I\'m responsible for app architecture, agile planning and estimation, team management, and dev ops.',
@@ -14,14 +17,14 @@ const jobContent = () => {
         {
           'body': 'Our app is built with Kotlin, Jetpack Compose, and Firebase.',
         },
-        {
-          'body': 'I enforce modern Android standards including Flow, Coroutines, MVVM, and Clean Architecture.',
-        },
+
       ],
       'start': '01/01/24',
-      'end': '-',
-      'stack': ['Kotlin', 'Jetpack Compose', 'Firebase', 'Flow', 'Coroutines', 'MVVM', 'Clean Architecture', 'Agile'],
-      'location': 'Ottawa, ON',
+      'end': 'Present',
+      'stack': ['Android', 'Kotlin', 'Jetpack Compose', 'Team Leadership', 'Management', 'LiteRT', 'Firebase', 'Flow', 'Coroutines', 'Bitrise'],
+      'location': 'Ottawa (Remote)',
+      'companyUrl': 'https://flexfitnessapp.com',
+      'logo': '/img/flex_ai_logo.png',
       'bgClass': 'flexDecoration',
     },
     {
@@ -29,22 +32,42 @@ const jobContent = () => {
       'title': 'Sr. Software Developer',
       'description': [
         {
-          'body': 'Over my five years at Konrad I\'ve worked with some of our largest clients to transform their mobile technology and digital presence.',
+          'body': 'Delivered mobile solutions for major enterprise clients in a dynamic consulting environment.',
         },
         {
-          'body': 'As an Android developer I work primarily in Kotlin and Java. However, I\'ve also had the opportunity to explore front-end technologies like Flutter and React.',
+          'body': 'Led end-to-end Android feature delivery, from technical discovery and architecture to implementation, QA, and release.',
         },
         {
-          'body': 'My favorite part about software consulting is that I\'m constantly learning, and being put into unique and challenging situations.',
+          'body': 'Built and maintained scalable Android applications using Kotlin, Java, Coroutines, and modern platform patterns, while also contributing to Flutter projects.',
         },
         {
-          'body': 'Previously: Software Developer, Associate Software Developer',
+          'body': 'Progressed from intern to senior developer, mentoring teammates and partnering with product, design, and QA to consistently deliver high-quality solutions.',
         },
       ],
       'start': '11/09/18',
       'end': '31/12/24',
-      'stack': ['Kotlin', 'Java', 'Android', 'Git', 'Jira', 'Agile'],
+      'stack': ['Android', 'Kotlin', 'Java', 'XML', 'Flutter', 'Coroutines', 'Git', 'Jira', 'Agile', 'Bitrise'],
       'location': 'Toronto',
+      'companyUrl': 'https://www.konrad.com',
+      'logo': '/img/kglogo.jpeg',
+      'previously': [
+        {
+          'title': 'Software Developer II',
+          'dates': 'Dec 2021 - Jun 2023',
+        },
+        {
+          'title': 'Software Developer',
+          'dates': 'Nov 2020 - Dec 2021',
+        },
+        {
+          'title': 'Associate Software Developer',
+          'dates': 'Dec 2018 - Nov 2020',
+        },
+        {
+          'title': 'Software Developer Intern',
+          'dates': 'Sep 2018 - Dec 2018',
+        },
+      ],
       'bgClass': 'kgDecoration',
     },
     {
@@ -52,16 +75,21 @@ const jobContent = () => {
       'title': 'Production Supervisor',
       'description': [
         {
-          'body': 'I oversaw 25 employees on a pickup-truck production line. I was responsible for ensuring that my shift met production quotas, while guaranteeing employee safety and product quality. We shipped over 400 trucks every day.',
+          'body': 'Supervised 25 employees on a pickup-truck production line. I was responsible for ensuring that my shift met production quotas, while guaranteeing employee safety and product quality.'
         },
         {
-          'body': 'I learned a lot at GM and made strong and lasting relationships with both my employees, and management. I left because I didn\'t see a way to transition into a software development role internally.',
+          'body': 'Created data processing tools in Visual Basic that allowed me to automate (typically manual) analytic processes, and quickly determine the root cause of defects.'
+        },
+        {
+          'body': 'I learned a lot at GM and made strong and lasting relationships with both my employees and management. I left because I didn\'t see a way to transition into a software development role internally.',
         },
       ],
       'start': '31/05/18',
       'end': '31/08/18',
-      'stack': ['Management', 'Leadership', 'Communication'],
+      'stack': ['Management', 'Leadership', 'Communication', 'Visual Basic'],
       'location': 'Oshawa',
+      'companyUrl': 'https://www.gm.com',
+      'logo': '/img/gm.jpg',
       'bgClass': 'gmDecoration',
     },
     {
@@ -69,40 +97,22 @@ const jobContent = () => {
       'title': 'Engineering Intern',
       'description': [
         {
-          'body': 'Developed an app for controlling the robot and conveyor systems at GM Oshawa.',
+          'body': 'Independently designed a hardware upgrade for the tablets that control the robot and conveyor systems at GM Oshawa.',
         },
         {
-          'body': 'The old touchpads needed to be replaced - but re-training staff was too expensive.',
+          'body': 'Created a protocol for converting robot control data to new control system\'s expected format. This saved countless hours of manual work.'
         },
         {
-          'body': 'I created a protocol for converting robot control data to the new system\'s expected format. This saved countless hours of manual work. I also created a custom UI that mimicked the legacy system, in order to make the transition easier for robot control staff.',
-        },
+          'body': 'Created a custom GUI for new tablets that mimicked the legacy system, to make the transition easier for robot control staff.'
+        }
       ],
       'start': '31/05/17',
       'end': '31/08/17',
-      'stack': ['Visual Basic', 'Documentation'],
+      'stack': ['Visual Basic', 'Front-End Development', 'Embedded Systems', 'Assembly'],
       'location': 'Oshawa',
+      'companyUrl': 'https://www.gm.com',
+      'logo': '/img/gm.jpg',
       'bgClass': 'gmDecoration2',
-    },
-    {
-      'company': 'Chipotle',
-      'title': 'Grill Cook',
-      'description': [
-        {
-          'body': 'I was in charge of preparing all hot food, and ensuring that the line was sufficiently stocked.',
-        },
-        {
-          'body': 'Working in a busy kitchen taught me about the importance of organization, communication and teamwork.',
-        },
-        {
-          'body': 'By continuously improving our processes, we were able to serve great food, and keep the restaurant running efficiently.'
-        }
-      ],
-      'start': '31/05/16',
-      'end': '31/08/16',
-      'stack': ['Communication', 'Teamwork', 'Food Safety'],
-      'location': 'Toronto',
-      'bgClass': 'chipotleDecoration',
     },
     ]
   }

@@ -14,6 +14,10 @@ import ct from '../../content/NavbarContent'
  */
 function Navbar({...props}) {
   const [click, setClick] = useState(false)
+  const animateIntro = props.animateIntro === true
+  const navbarClass = click ?
+    'navbar active' :
+    (animateIntro ? 'navbar' : 'navbar noAnimation')
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
@@ -72,7 +76,7 @@ function Navbar({...props}) {
 
   return (
     (false) ? <div></div> :
-      <nav className={click ? 'navbar active' : 'navbar'}>
+      <nav className={navbarClass}>
         <span
           className="navbar-logo"
           onClick={() => {
