@@ -44,9 +44,11 @@ function ProjectsSection() {
     <div id="projects">
       <div className="projectsSectionContainer">
         <div className="projectsTitleBar">
-          <div className="projectsTitleDecoration" />
           <div className="portfolioText">Personal Projects</div>
-          <div className="projectsTitleDecoration" />
+        </div>
+        <div className="projectsSubtitle">
+          Experiments with various technologies to expand my capabilities as a
+          software engineer.
         </div>
         <div className="projectTileListContainer reveal fade-bottom">
           {projects

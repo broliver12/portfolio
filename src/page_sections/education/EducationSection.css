@@ -1,0 +1,218 @@
+.educationSectionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 14vh;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-image: linear-gradient(
+    180deg,
+    #ffffff04 0%,
+    #00000014 100%
+  );
+}
+
+.educationTitleBar {
+  font-size: 56px;
+  color: var(--os-text-light);
+  text-align: center;
+}
+
+.educationSubtitle {
+  margin-top: 10px;
+  max-width: 980px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+  color: var(--os-text-body);
+  font-size: 22px;
+  font-family: var(--os-font-main-light);
+  line-height: 1.4;
+}
+
+.educationCard {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+  border: 1px solid var(--os-primary-light-transparent);
+  border-radius: 14px;
+  background-color: var(--os-primary-light-transparent);
+  padding: 20px;
+}
+
+.educationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.educationMain {
+  display: flex;
+  gap: 16px;
+  min-width: 0;
+}
+
+.educationLogo {
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  border: 1px solid var(--os-primary-light-transparent);
+  background-color: #ffffff;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.educationLogoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.educationMeta {
+  min-width: 0;
+}
+
+.educationSchool {
+  font-size: 24px;
+  color: var(--os-text-light);
+  font-family: var(--os-font-main-bold);
+  line-height: 1.1;
+}
+
+.educationDegree {
+  margin-top: 6px;
+  font-size: 20px;
+  color: var(--os-employer);
+  font-family: var(--os-font-main-bold);
+  line-height: 1.25;
+}
+
+.educationPill {
+  margin-top: 10px;
+  display: inline-flex;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--os-element);
+  color: var(--os-element);
+  font-size: 14px;
+  font-family: var(--os-font-accent);
+  background-color: #ffffff08;
+}
+
+.educationDate {
+  color: var(--os-text-body);
+  font-size: 18px;
+  font-family: var(--os-font-accent);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.educationDateIcon {
+  width: 19px;
+  height: 19px;
+  display: inline-flex;
+  color: var(--os-text-body);
+}
+
+.educationDateIcon svg {
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+
+.educationDescription {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--os-primary-light-transparent);
+  color: var(--os-text-light);
+  font-family: var(--os-font-main-light);
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1200px) {
+  .educationTitleBar {
+    font-size: 48px;
+  }
+
+  .educationSubtitle {
+    font-size: 21px;
+  }
+
+  .educationSchool {
+    font-size: 22px;
+  }
+
+  .educationDegree {
+    font-size: 18px;
+  }
+
+  .educationDate {
+    font-size: 17px;
+  }
+
+  .educationDescription {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .educationHeader {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .educationDate {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .educationSectionContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .educationTitleBar {
+    font-size: 44px;
+  }
+
+  .educationSubtitle {
+    font-size: 18px;
+  }
+
+  .educationCard {
+    padding: 18px;
+  }
+
+  .educationLogo {
+    width: 56px;
+    height: 56px;
+    font-size: 13px;
+  }
+
+  .educationSchool {
+    font-size: 20px;
+  }
+
+  .educationDegree {
+    font-size: 17px;
+  }
+
+  .educationPill {
+    font-size: 13px;
+  }
+
+  .educationDescription {
+    font-size: 18px;
+  }
+}

@@ -59,6 +59,11 @@
 }
 
 @font-face {
+  font-family: "calibre-medium";
+  src: url("./fonts/Calibre/Calibre-Medium.ttf");
+}
+
+@font-face {
   font-family: "calibre-bold";
   src: url("./fonts/Calibre/Calibre-Semibold.ttf");
 }
