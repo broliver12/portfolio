@@ -20,8 +20,8 @@ function WorkSection() {
         <div>{content.title}</div>
       </div>
       <div className="workSubtitle">
-        From enterprise consulting to product ownership, I&apos;ve led teams
-        and built scalable mobile experiences across high-impact platforms.
+        From enterprise consulting to early stage startups, I&apos;ve led teams
+        in building scalable, maintainable and beautiful mobile experiences.
       </div>
 
       <div className="jobCardsContainer">

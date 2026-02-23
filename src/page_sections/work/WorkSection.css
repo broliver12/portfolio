@@ -39,7 +39,7 @@
   padding-left: 24px;
   padding-right: 24px;
   text-align: center;
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   font-size: 24px;
   font-family: var(--os-font-main-light);
   line-height: 1.4;
@@ -213,14 +213,14 @@
 
 .previouslyLabel {
   font-size: 16px;
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   font-family: var(--os-font-main-medium);
   line-height: 1.2;
 }
 
 .previouslyInlineItem {
   font-size: 16px;
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   font-family: var(--os-font-main-light);
   line-height: 1.2;
 }
@@ -229,7 +229,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   font-family: var(--os-font-accent);
   font-size: 18px;
   padding-top: 3px;
@@ -258,9 +258,14 @@
 .metaIconImage {
   width: 16px;
   height: 16px;
+  display: inline-flex;
+  color: var(--os-text-tertiary);
+}
+
+.metaIconImage svg {
+  width: 16px;
+  height: 16px;
   display: block;
-  filter: brightness(0) saturate(100%) invert(86%) sepia(9%) saturate(401%)
-    hue-rotate(167deg) brightness(96%) contrast(97%);
 }
 
 .jobBullets {

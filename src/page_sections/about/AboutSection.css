@@ -20,7 +20,7 @@
 .aboutSectionBody {
   font-size: 29px;
   font-family: var(--os-font-main-light);
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   line-height: 1.55;
   text-align: center;
   margin-top: 18px;

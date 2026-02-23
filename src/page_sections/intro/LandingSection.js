@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import './LandingSection.css'
 import '../../components/button/Button.css'
 import ct from '../../content/LandingContent.js'
@@ -21,6 +21,8 @@ function LandingSection(props) {
   ]
   const [roleIndex, setRoleIndex] = useState(0)
   const [roleVisible, setRoleVisible] = useState(true)
+  const [isIntroVisible, setIsIntroVisible] = useState(false)
+  const introContentRef = useRef(null)
 
   const introTextClass = animateIntro ?
     'intro-text loading' :
@@ -45,23 +47,51 @@ function LandingSection(props) {
   const roleArticle = /^[aeiou]/i.test(currentRole) ? 'an' : 'a'
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const section = introContentRef.current
+    if (!section) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsIntroVisible(entry.isIntersecting),
+      {threshold: 0.45}
+    )
+    observer.observe(section)
+
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!isIntroVisible) return
+
+    const runTransition = () => {
       setRoleVisible(false)
       setTimeout(() => {
         setRoleIndex((prev) => (prev + 1) % roles.length)
         setRoleVisible(true)
       }, 220)
+    }
+
+    let rotationInterval = null
+
+    // Delay first rotation until the section has been on screen.
+    const initialDelay = setTimeout(() => {
+      runTransition()
+      rotationInterval = setInterval(runTransition, 3000)
     }, 3000)
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => {
+      clearTimeout(initialDelay)
+      if (rotationInterval) {
+        clearInterval(rotationInterval)
+      }
+    }
+  }, [isIntroVisible])
 
   return (<div className="introContainer">
     <div className="salutation">
       <div className={introTextClass}>{content.animated_text}</div>
       <span className={cursorClass}>{content.animated_cursor}</span>
     </div>
-    <div id="intro" className="introContent">
+    <div id="intro" ref={introContentRef} className="introContent">
       <div className={headerClass}>{content.name}</div>
       <div className={titleClass}>
         {'I\'m ' + roleArticle + ' '}
