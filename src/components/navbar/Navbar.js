@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import '../navbar/Navbar.css'
 import '../socials/Socials.css'
 import '../button/Button.css'
@@ -15,14 +15,21 @@ import ct from '../../content/NavbarContent'
 function Navbar({...props}) {
   const [click, setClick] = useState(false)
   const animateIntro = props.animateIntro === true
-  const navbarClass = click ?
-    'navbar active' :
-    (animateIntro ? 'navbar' : 'navbar noAnimation')
+  const navbarClass = animateIntro ? 'navbar' : 'navbar noAnimation'
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
   const links = li()
   const content = ct()
+
+  useEffect(() => {
+    const handleResize = () => {
+      setClick(false)
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const standardButtonText = content.buttons.map((item) => {
     return {

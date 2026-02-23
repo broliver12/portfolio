@@ -50,16 +50,15 @@ function WorkSection() {
                     <div className="companyName">{job.company}</div>
                     <div className="jobRole">{job.title}</div>
                     {job.previously && job.previously.length > 0 ? (
-                      <div className="previouslyInlineList">
-                        {job.previously.map((entry, i) => (
-                          <div key={i} className="previouslyInlineItem">
-                            {'Previously: ' +
-                              entry.title +
-                              ' (' +
-                              entry.dates +
-                              ')'}
-                          </div>
-                        ))}
+                      <div className="previouslyBlock">
+                        <div className="previouslyLabel">Previously:</div>
+                        <div className="previouslyInlineList">
+                          {job.previously.map((entry, i) => (
+                            <div key={i} className="previouslyInlineItem">
+                              {entry.title + ' (' + entry.dates + ')'}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     ) : null}
                   </div>

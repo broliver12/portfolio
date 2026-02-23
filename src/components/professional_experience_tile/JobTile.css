@@ -27,13 +27,13 @@
 }
 
 .jobTitle {
-  font-size: 24px;
+  font-size: 40px;
   font-family: var(--os-font-main-bold);
   color: var(--os-text-body);
 }
 
 .companyTitle {
-  font-size: 18px;
+  font-size: 20px;
   font-family: var(--os-font-accent);
   color: var(--os-text-body);
 }

@@ -32,7 +32,7 @@
 }
 
 .navbar.noAnimation {
-  opacity: 1;
+  opacity: 0.95;
   -webkit-animation: none;
   -moz-animation: none;
   -o-animation: none;

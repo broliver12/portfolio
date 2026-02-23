@@ -8,7 +8,7 @@ const jobContent = () => {
         {
           'body': 'Lead engineer building Flex Fitness for Android, an intelligent workout companion and social media app.',
         },
-           {
+        {
           'body': 'I deliver quickly with low overhead by enforcing Android standards including Flow, Coroutines, MVVM, and Clean Architecture.',
         },
         {

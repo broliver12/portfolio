@@ -111,8 +111,7 @@ function ContactSection() {
       key: 'resume',
       label: 'Download Resume',
       href: links.resume_url,
-      target: '_blank',
-      rel: 'noreferrer',
+      download: 'oliver_straszynski_resume.pdf',
       iconType: 'download',
       primary: true,
     },
@@ -291,6 +290,7 @@ function ContactSection() {
               href={item.href}
               target={item.target}
               rel={item.rel}
+              download={item.download}
               className={
                 'actionBtn' + (item.primary ? ' actionBtnPrimary' : '')
               }

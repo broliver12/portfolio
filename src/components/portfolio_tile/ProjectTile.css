@@ -1,10 +1,9 @@
 .projectTileContainer {
   width: 292px;
   height: 292px;
-  padding: 0;
   margin: 8px;
   flex-basis: 0.35;
-  padding: 12px;
+  padding: 12px 12px 16px;
   background-color: var(--os-primary-light-transparent);
   border-radius: 8px;
   display: flex;
@@ -83,14 +82,13 @@
 
 .languageContainer {
   display: flex;
-  justify-self: center;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 4px;
-  position: relative;
-  height: 100%;
+  margin-top: auto;
+  padding: 12px 4px 0;
+  border-top: 1px solid var(--os-primary-light-transparent);
 }
 
 .languageItem {
@@ -104,6 +102,6 @@
   background-color: #00000000;
   border: 1px solid var(--os-text-light);
   padding-top: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   color: var(--os-text-light);
 }
