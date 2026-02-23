@@ -10,7 +10,7 @@
   width: 100%;
   background-image: linear-gradient(
     180deg,
-    #ffffff04 0%,
+    #ffffff08 0%,
     #00000014 100%
   );
 }
@@ -182,26 +182,40 @@
 .companyName {
   font-size: 24px;
   color: var(--os-text-light);
-  font-family: var(--os-font-main-bold);
+  font-family: var(--os-font-main-medium);
   line-height: 1.2;
 }
 
 .centeredText {
-    transform: translateY(3px);
+    transform: translateY(2.5px);
 }
 
 .jobRole {
-  font-size: 20px;
+  font-size: 32px;
   color: var(--os-employer);
-  font-family: var(--os-font-main-medium);
+  font-family: var(--os-font-main-light);
   line-height: 1.1;
 }
 
 .previouslyInlineList {
-  margin-top: 8px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.previouslyBlock {
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.previouslyLabel {
+  font-size: 16px;
+  color: var(--os-text-body);
+  font-family: var(--os-font-main-medium);
+  line-height: 1.2;
 }
 
 .previouslyInlineItem {
@@ -244,14 +258,9 @@
 .metaIconImage {
   width: 16px;
   height: 16px;
-  display: inline-flex;
-  color: var(--os-text-body);
-}
-
-.metaIconImage svg {
-  width: 16px;
-  height: 16px;
   display: block;
+  filter: brightness(0) saturate(100%) invert(86%) sepia(9%) saturate(401%)
+    hue-rotate(167deg) brightness(96%) contrast(97%);
 }
 
 .jobBullets {
@@ -311,7 +320,7 @@
 
 @media only screen and (max-width: 1500px) {
   .workContainer {
-    padding-left: 32px;
+    padding-left: 16px;
     padding-right: 32px;
     margin-right: 0;
   }
@@ -329,7 +338,7 @@
 
 @media only screen and (max-width: 1200px) {
   .workContainer {
-    padding-left: 32px;
+    padding-left: 16px;
     padding-right: 32px;
     margin-right: 0;
     align-items: center;
@@ -355,7 +364,7 @@
 
 @media only screen and (max-width: 960px) {
   .workContainer {
-    padding-left: 32px;
+    padding-left: 16px;
     padding-right: 32px;
   }
 
@@ -388,7 +397,7 @@
   }
 
   .workContainer {
-    padding-left: 32px;
+    padding-left: 16px;
     padding-right: 32px;
   }
 
@@ -403,18 +412,30 @@
   }
 
   .companyName {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .jobRole {
-    font-size: 34px;
+    font-size: 24px;
   }
 
   .descLineSpace {
     font-size: 18px;
   }
 
+  .previouslyBlock {
+    display: block;
+  }
+
+  .previouslyInlineList {
+    margin-top: 4px;
+  }
+
   .previouslyInlineItem {
+    font-size: 14px;
+  }
+
+  .previouslyLabel {
     font-size: 14px;
   }
 

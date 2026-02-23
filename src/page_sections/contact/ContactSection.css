@@ -49,6 +49,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contactCard {
@@ -56,6 +58,7 @@
   background-color: var(--os-primary-light-transparent);
   border-radius: 14px;
   padding: 15px;
+  max-width: 360px;
   color: var(--os-text-light);
 }
 
@@ -310,6 +313,7 @@
 @media only screen and (max-width: 960px) {
   .contactGrid {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .contactTitleHeader {
@@ -343,34 +347,34 @@
   }
 
   .contactCard {
-    padding: 18px;
+    padding: 15px;
   }
 
   .contactCardTitle {
-    font-size: 30px;
-  }
-
-  .contactInfoLabel {
     font-size: 25px;
   }
 
-  .contactInfoValue {
+  .contactInfoLabel {
     font-size: 20px;
   }
 
+  .contactInfoValue {
+    font-size: 15px;
+  }
+
   .contactCardNote {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .actionBtn {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .availabilityTitle {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .availabilityText {
-    font-size: 22px;
+    font-size: 15px;
   }
 }
