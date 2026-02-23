@@ -1,71 +1,29 @@
 :root {
-
-
-  /* Dark Blue Theme */
-/* 
-  /* Theme Colors
-    --os-primary-dark: #07041D;
-    --os-primary-light: #8ED7F0;
-    --os-element: #8ED7F0;
-    --os-cancel: #ed6565;
-    --os-transparent: #00000000;
-    --os-primary-light-transparent: #8ED7F033;
-  
-    /* Text Colors
-    --os-text-body: #c8cdda;
-    --os-text-light: #ddd;
-
- */
-
-  /* Black Theme */
-  --os-primary-dark: #0E1111;
-  --os-primary-light: #dddddd;
-  --os-element: #dddddd;
-  --os-cancel: #e41414;
+  /* Charcoal Theme */
+  --os-primary-dark: #0d0f13;
+  --os-primary-light: #b7c1d1;
+  --os-element: #7ea8ff;
+  --os-cancel: #ff6e7b;
   --os-transparent: #00000000;
-  --os-primary-light-transparent: #66666633;
-  --os-text-body: #dfe1e8;
-  --os-text-light: #dddddd; 
+  --os-primary-light-transparent: #b7c1d126;
 
-  --os-employer: #8fcad8;
+  /* Text hierarchy */
+  --os-text-light: #f2f4f8;
+  --os-text-body: #d2d8e3;
+  --os-text-secondary: #aeb8c8;
+  --os-text-tertiary: #7891aa;
+
+  /* Accent hierarchy */
+  --os-employer: #b2a6ff;
+  --os-accent-secondary: #b2a6ff;
+  --os-accent-tertiary: #b2a6ff;
 
   --os-dark-more-transparent: #00000000;
-  --os-dark-transparent: #00000055;
-  --os-light-transparent: #dddddd33;
+  --os-dark-transparent: #0000005c;
+  --os-light-transparent: #f3f8f22e;
   
-  --os-overlay-more-transparent: #00000099;
-  --os-overlay-transparent: #000000bb;
-
-/* White Theme */
-/* 
-    /* Theme Colors 
-      --os-primary-dark: #f4f4f4;
-      --os-primary-light: #000000;
-      --os-element: #000000;
-      --os-cancel: #ad14e4;
-      --os-transparent: #00000000;
-      --os-primary-light-transparent: #00000033;
-    
-      /* Text Colors 
-      --os-text-body: #333333;
-      --os-text-light: #222222; 
- */
-
-/* Light green Theme */
-/* 
-    /* Theme Colors 
-          --os-primary-dark: #96c7c7;
-          --os-primary-light: #19400a;
-          --os-element: #0c0941;
-          --os-cancel: #ad14e4;
-          --os-transparent: #00000000;
-          --os-primary-light-transparent: #19400a33;
-        
-          /* Text Colors 
-          --os-text-body: #32336d;
-          --os-text-light: #32336d;  
-          
-          */
+  --os-overlay-more-transparent: #080b11a6;
+  --os-overlay-transparent: #080b11c9;
 
   /* Fonts */
   --os-font-main: "calibre";
