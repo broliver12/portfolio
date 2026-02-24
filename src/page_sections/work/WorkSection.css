@@ -109,7 +109,7 @@
   height: var(--timeline-dot-size);
   border-radius: 999px;
   background-color: var(--os-primary-dark);
-  border: var(--timeline-dot-border) solid var(--os-primary-light);
+  border: var(--timeline-dot-border) solid var(--os-text-light);
   z-index: 1;
 }
 
@@ -170,7 +170,7 @@
 
 .logoPlaceholder {
   font-size: 12px;
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   font-family: var(--os-font-accent);
 }
 
@@ -188,12 +188,12 @@
 }
 
 .centeredText {
-    transform: translateY(2.5px);
+    transform: translateY(3.5px);
 }
 
 .jobRole {
   font-size: 32px;
-  color: var(--os-employer);
+  color: var(--os-accent-primary);
   font-family: var(--os-font-main-light);
   line-height: 1.1;
 }
@@ -260,7 +260,7 @@
   width: 16px;
   height: 16px;
   display: inline-flex;
-  color: var(--os-text-tertiary);
+  color: var(--os-accent-secondary);
 }
 
 .metaIconImage svg {

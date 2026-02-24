@@ -16,30 +16,30 @@
 }
 
 .jobTileContainer:hover {
-  border-left: 6px solid var(--os-element);
+  border-left: 6px solid var(--os-accent-primary);
   transition: all 0.2s ease;
 }
 
 .jobTileContainerSelected {
   background-color: var(--os-primary-light-transparent);
   border: 2px solid var(--os-primary-light);
-  border-left: 6px solid var(--os-element);
+  border-left: 6px solid var(--os-accent-primary);
 }
 
 .jobTitle {
   font-size: 40px;
   font-family: var(--os-font-main-bold);
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
 }
 
 .companyTitle {
   font-size: 20px;
   font-family: var(--os-font-accent);
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
 }
 
 .titleSelected {
-  color: var(--os-element);
+  color: var(--os-accent-primary);
 }
 
 .jobTitleSelected {

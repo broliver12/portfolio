@@ -79,7 +79,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--os-text-tertiary);
+  color: var(--os-accent-secondary);
 }
 
 .contactTitleIcon svg {
@@ -118,7 +118,7 @@
   justify-content: center;
   flex-shrink: 0;
   transform: translateY(-1px);
-  color: var(--os-text-tertiary);
+  color: var(--os-accent-secondary);
 }
 
 .contactInfoIcon svg {
@@ -133,7 +133,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--os-text-tertiary);
+  color: var(--os-accent-secondary);
   flex-shrink: 0;
   transform: translateY(-1px);
 }
@@ -159,9 +159,9 @@
 }
 
 .copyIconBtn {
-  border: 1px solid var(--os-element);
+  border: 1px solid var(--os-accent-primary);
   background-color: transparent;
-  color: var(--os-element);
+  color: var(--os-accent-primary);
   border-radius: 7px;
   padding: 4px 8px;
   font-size: 12px;
@@ -172,7 +172,7 @@
 }
 
 .copyIconBtn:hover {
-  background-color: var(--os-element);
+  background-color: var(--os-primary-light);
   color: var(--os-primary-dark);
 }
 
@@ -197,10 +197,10 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  border: 2px solid var(--os-element);
+  border: 2px solid var(--os-primary-light);
   border-radius: 10px;
   padding: 8px 20px;
-  color: var(--os-element);
+  color: var(--os-primary-light);
   min-height: 40px;
   margin-bottom: 10px;
   font-family: var(--os-font-main-bold);
@@ -251,12 +251,12 @@
 }
 
 .actionBtnPrimary {
-  background-color: var(--os-element);
+  background-color: var(--os-accent-primary);
   color: var(--os-primary-dark);
 }
 
 .actionBtnPrimary:hover {
-  background-color: var(--os-text-light);
+  background-color: var(--os-primary-light);
   color: var(--os-primary-dark);
 }
 
@@ -280,7 +280,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--os-text-tertiary);
+  color: var(--os-primary-light);
 }
 
 .availabilityIcon svg {

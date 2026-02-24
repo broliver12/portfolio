@@ -76,7 +76,7 @@ function LandingSection(props) {
     const initialDelay = setTimeout(() => {
       runTransition()
       rotationInterval = setInterval(runTransition, 3000)
-    }, 3000)
+    }, 4500)
 
     return () => {
       clearTimeout(initialDelay)

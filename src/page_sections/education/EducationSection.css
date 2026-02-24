@@ -89,7 +89,7 @@
 .educationDegree {
   margin-top: 6px;
   font-size: 24px;
-  color: var(--os-employer);
+  color: var(--os-accent-primary);
   font-family: var(--os-font-main-light);
   line-height: 1.25;
 }
@@ -99,8 +99,8 @@
   display: inline-flex;
   padding: 5px 10px;
   border-radius: 999px;
-  border: 1px solid var(--os-element);
-  color: var(--os-element);
+  border: 1px solid var(--os-accent-secondary);
+  color: var(--os-accent-secondary);
   font-size: 14px;
   font-family: var(--os-font-accent);
   background-color: #ffffff08;
@@ -120,7 +120,7 @@
   width: 19px;
   height: 19px;
   display: inline-flex;
-  color: var(--os-text-tertiary);
+  color: var(--os-accent-secondary);
 }
 
 .educationDateIcon svg {

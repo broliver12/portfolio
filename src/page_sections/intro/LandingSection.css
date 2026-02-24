@@ -81,7 +81,7 @@
 
 .introTitleHeader {
   font-size: 50px;
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   opacity: 0;
   -webkit-animation: fadeInFull ease 2s forwards;
   -moz-animation: fadeInFull ease 2s forwards;
@@ -105,13 +105,13 @@
 }
 
 .introRoleAccent {
-  color: var(--os-employer);
+  color: var(--os-accent-primary);
 }
 
 .introDescription {
   font-size: 22px;
   font-family: var(--os-font-main-light);
-  color: var(--os-text-body);
+  color: var(--os-text-secondary);
   margin-top: 18px;
   max-width: 900px;
   opacity: 0;
@@ -124,7 +124,7 @@
 
 .employerLabel {
   padding-left: 5px;
-  color: var(--os-employer);
+  color: var(--os-accent-primary);
 }
 
 .employerLabel:hover {

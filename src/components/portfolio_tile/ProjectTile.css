@@ -17,7 +17,7 @@
 .projectTitle {
   font-size: 24px;
   margin-left: 4px;
-  color: var(--os-element);
+  color: var(--os-accent-primary);
   font-family: var(--os-font-main-bold);
   margin-top: 12px;
 }
@@ -45,7 +45,7 @@
   width: 64px;
   height: 64px;
   justify-self: flex-start;
-  color: var(--os-primary-light);
+  color: var(--os-accent-secondary);
 }
 
 .githubIcon {
@@ -82,14 +82,15 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: auto;
+  row-gap: 6px;
   padding: 12px 4px 0;
   border-top: 1px solid var(--os-primary-light-transparent);
 }
 
 .languageItem {
-  border-radius: 8px;
+  /* border-radius: 8px;
   font-size: 16px;
   text-align: center;
   padding-left: 8px;
@@ -97,8 +98,18 @@
   margin-right: 6px;
   text-overflow: ellipsis;
   background-color: #00000000;
-  border: 1px solid var(--os-text-light);
+  border: 1px solid var(--os-primary-light-transparent);
   padding-top: 4px;
   margin-bottom: 0;
+  color: var(--os-text-light); */
+  margin-right: 6px;
+    border-radius: 999px;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 12px;
+  text-overflow: ellipsis;
+  background-color: #00000022;
+  border: 1px solid var(--os-primary-light-transparent);
   color: var(--os-text-light);
+  font-family: var(--os-font-accent);
 }
