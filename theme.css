@@ -1,29 +1,21 @@
 :root {
   /* Charcoal Theme */
-  --os-primary-dark: #0d0f13;
-  --os-primary-light: #b7c1d1;
-  --os-element: #7ea8ff;
-  --os-cancel: #ff6e7b;
+  /* Backgrounds */
+  --os-primary-dark: #121419;
+  --os-primary-light: #7ea9ffc7;
+  --os-primary-light-transparent: #7d9fd526;
+
+  /* Util */
   --os-transparent: #00000000;
-  --os-primary-light-transparent: #b7c1d126;
+  --os-cancel: #ff6e7b;
 
   /* Text hierarchy */
   --os-text-light: #f2f4f8;
-  --os-text-body: #d2d8e3;
-  --os-text-secondary: #aeb8c8;
-  --os-text-tertiary: #7891aa;
+  --os-text-secondary: #c4c6c9;
 
   /* Accent hierarchy */
-  --os-employer: #b2a6ff;
-  --os-accent-secondary: #b2a6ff;
-  --os-accent-tertiary: #b2a6ff;
-
-  --os-dark-more-transparent: #00000000;
-  --os-dark-transparent: #0000005c;
-  --os-light-transparent: #f3f8f22e;
-  
-  --os-overlay-more-transparent: #080b11a6;
-  --os-overlay-transparent: #080b11c9;
+  --os-accent-primary: #7ea8ff;
+  --os-accent-secondary: #a6cbf6;
 
   /* Fonts */
   --os-font-main: "calibre";
