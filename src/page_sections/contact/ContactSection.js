@@ -270,9 +270,7 @@ function ContactSection() {
           </div>
 
           <div className="contactCardNote">
-            I&apos;m always interested in discussing new opportunities,
-            innovative projects, and ways to create impactful software
-            solutions. Feel free to reach out.
+            I&apos;d love to hear about what you&apos;re building, and how I can contribute. Let&apos;s talk!.
           </div>
         </CardSurface>
 
@@ -311,7 +309,7 @@ function ContactSection() {
               <span className="centeredText">Availability</span>
             </div>
             <div className="availabilityText">
-              Open to remote opportunities worldwide and on-site roles.
+              Open to new opportunities, both remote and in office.
             </div>
           </div>
         </CardSurface>

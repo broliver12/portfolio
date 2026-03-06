@@ -9,7 +9,7 @@ const jobContent = () => {
           'body': 'Lead engineer building Flex Fitness for Android, an intelligent workout companion and social media app.',
         },
         {
-          'body': 'I deliver quickly with low overhead by enforcing Android standards including Flow, Coroutines, MVVM, and Clean Architecture.',
+          'body': 'I deliver quickly with low overhead by enforcing standardized use of modern Android tech including Flow, Coroutines, MVVM, and Clean Architecture.',
         },
         {
           'body': 'I\'m responsible for app architecture, agile planning and estimation, team management, and dev ops.',
@@ -17,7 +17,6 @@ const jobContent = () => {
         {
           'body': 'Our app is built with Kotlin, Jetpack Compose, and Firebase.',
         },
-
       ],
       'start': '01/01/24',
       'end': 'Present',
