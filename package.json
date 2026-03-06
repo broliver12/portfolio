@@ -25,11 +25,11 @@
   "scripts": {
     "dev": "next dev",
     "start": "next dev",
-    "build": "next build",
+    "build": "next build && touch out/.nojekyll",
     "test": "echo \"No tests configured\"",
     "lint": "npx eslint --fix \"./src/**/*.js\" && npx eslint --fix \"./src/*.js\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d out"
+    "deploy": "gh-pages -b gh-pages -d out --dotfiles"
   },
   "browserslist": {
     "production": [
