@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  background-color: var(--os-primary-dark);
+}
+
 .no-scroll {
   overflow: hidden;
 }

@@ -1,5 +1,3 @@
-import React from 'react'
-import './AboutSection.css'
 import ct from '../../content/AboutContent.js'
 
 /**
@@ -13,9 +11,10 @@ function AboutSection() {
   return (
     <div id="about">
       <div className="aboutSectionContainer reveal fade-left">
+        <h2 className="srOnly">About</h2>
         <div className="aboutSectionText">
-          <div className="aboutSectionBody">{content.paragraph_one}</div>
-          <div className="aboutSectionBody">{content.paragraph_two}</div>
+          <p className="aboutSectionBody">{content.paragraph_one}</p>
+          <p className="aboutSectionBody">{content.paragraph_two}</p>
         </div>
       </div>
     </div>

@@ -1,6 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
-import './LandingSection.css'
-import '../../components/button/Button.css'
+import {useEffect, useRef, useState} from 'react'
 import ct from '../../content/LandingContent.js'
 
 /**
@@ -92,14 +90,14 @@ function LandingSection(props) {
       <span className={cursorClass}>{content.animated_cursor}</span>
     </div>
     <div id="intro" ref={introContentRef} className="introContent">
-      <div className={headerClass}>{content.name}</div>
-      <div className={titleClass}>
+      <h1 className={headerClass}>{content.name}</h1>
+      <h2 className={titleClass}>
         {'I\'m ' + roleArticle + ' '}
         <span className={roleClass + ' introRoleAccent'}>
           {currentRole}
         </span>
         {' and Computer Engineer.'}
-      </div>
+      </h2>
       <div className={descClass}>
         {content.paragraph_section_1}
         <l className="employerLabel" onClick={() =>{

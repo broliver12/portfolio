@@ -1,4 +1,3 @@
-import React from 'react'
 
 /**
  * Loading Icon, resizes to container

@@ -1,6 +1,4 @@
-import React, {useState} from 'react'
-import './ProjectsSection.css'
-import '../../components/button/Button.css'
+import {useState} from 'react'
 import ProjectTile from '../../components/portfolio_tile/ProjectTile'
 import li from '../../content/ExternalLinks.js'
 import ct from '../../content/PortfolioContent.js'
@@ -44,12 +42,12 @@ function ProjectsSection() {
     <div id="projects">
       <div className="projectsSectionContainer">
         <div className="projectsTitleBar">
-          <div className="portfolioText">Personal Projects</div>
+          <h2 className="portfolioText">Personal Projects</h2>
         </div>
-        <div className="projectsSubtitle">
+        <p className="projectsSubtitle">
           Experiments with various technologies to expand my capabilities as a
           software engineer.
-        </div>
+        </p>
         <div className="projectTileListContainer reveal fade-bottom">
           {projects
             .filter((item, index) => index <= shown)

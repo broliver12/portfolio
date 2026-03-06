@@ -1,5 +1,3 @@
-import React from 'react'
-import './ProjectTile.css'
 import IconFolder from '../../icon/IconFolder'
 import IconGithub from '../../icon/IconGithub'
 import CardSurface from '../card_surface/CardSurface'
@@ -30,18 +28,18 @@ function ProjectTile(props) {
           </div>
         </div>
       </div>
-      <div
+      <h3
         className={props.selected === true ? 'projectTitle' : 'projectTitle'}
       >
         {props.title}
-      </div>
-      <div
+      </h3>
+      <p
         className={
           props.selected === true ? 'projectDescription' : 'projectDescription'
         }
       >
         {props.description}
-      </div>
+      </p>
       <div className="languageContainer">
         {props.skills.map((item, index) => (
           <div key={index} className="languageItem">{item}</div>

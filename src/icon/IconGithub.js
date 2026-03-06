@@ -1,4 +1,3 @@
-import React from 'react'
 
 /**
  * Originally written by https://github.com/bchiang7

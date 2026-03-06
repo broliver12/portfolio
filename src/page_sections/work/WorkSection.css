@@ -32,6 +32,13 @@
   margin-top: 18px;
 }
 
+.workTitleBar h2 {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
 .workSubtitle {
   margin-top: 10px;
   margin-bottom: 8px;
@@ -185,6 +192,7 @@
   color: var(--os-text-light);
   font-family: var(--os-font-main-medium);
   line-height: 1.2;
+  margin: 0;
 }
 
 .centeredText {
@@ -196,6 +204,7 @@
   color: var(--os-accent-primary);
   font-family: var(--os-font-main-light);
   line-height: 1.1;
+  margin: 0;
 }
 
 .previouslyInlineList {

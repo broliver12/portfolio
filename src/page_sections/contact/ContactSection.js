@@ -1,6 +1,4 @@
-import React, {useEffect, useState} from 'react'
-import './ContactSection.css'
-import '../../components/image_cube/Cube.css'
+import {useEffect, useState} from 'react'
 import ct from '../../content/ContactContent'
 import linksContent from '../../content/ExternalLinks'
 import IconLinkedin from '../../icon/IconLinkedin'
@@ -215,17 +213,17 @@ function ContactSection() {
         </div>
       </div>
 
-      <div className="contactTitleHeader">{content.header}</div>
-      <div className="contactParagraph">{content.sub_header}</div>
+      <h2 className="contactTitleHeader">{content.header}</h2>
+      <p className="contactParagraph">{content.sub_header}</p>
 
       <div className="contactGrid">
         <CardSurface className="contactCard">
-          <div className="contactCardTitle">
+          <h3 className="contactCardTitle">
             <span className="contactTitleIcon" aria-hidden="true">
               <IconForum />
             </span>
             <span className='centeredText'>Contact Me</span>
-          </div>
+          </h3>
 
           <div className="contactInfoRow">
             <div className="contactInfoTopRow">
@@ -270,17 +268,18 @@ function ContactSection() {
           </div>
 
           <div className="contactCardNote">
-            I&apos;d love to hear about what you&apos;re building, and how I can contribute. Let&apos;s talk!.
+            I&apos;d love to hear about what you&apos;re building, and how I
+            can contribute. Let&apos;s talk!.
           </div>
         </CardSurface>
 
         <CardSurface className="contactCard">
-          <div className="contactCardTitle">
+          <h3 className="contactCardTitle">
             <span className="contactTitleIcon" aria-hidden="true">
               <IconQuickreply />
             </span>
             <span className='centeredText'>Quick Actions</span>
-          </div>
+          </h3>
 
           {actionItems.map((item) => (
             <a
@@ -302,12 +301,12 @@ function ContactSection() {
           ))}
 
           <div className="availabilityBlock">
-            <div className="availabilityTitle">
+            <h4 className="availabilityTitle">
               <span className="availabilityIcon" aria-hidden="true">
                 <IconLocationOn />
               </span>
               <span className="centeredText">Availability</span>
-            </div>
+            </h4>
             <div className="availabilityText">
               Open to new opportunities, both remote and in office.
             </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 
 /**
  * Calendar Month Icon

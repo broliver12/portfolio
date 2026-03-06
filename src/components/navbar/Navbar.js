@@ -1,7 +1,4 @@
-import React, {useEffect, useState} from 'react'
-import '../navbar/Navbar.css'
-import '../socials/Socials.css'
-import '../button/Button.css'
+import {useEffect, useState} from 'react'
 import '../../icon/IconLoading'
 import IconLoading from '../../icon/IconLoading'
 import li from '../../content/ExternalLinks.js'
@@ -15,7 +12,10 @@ import ct from '../../content/NavbarContent'
 function Navbar({...props}) {
   const [click, setClick] = useState(false)
   const animateIntro = props.animateIntro === true
-  const navbarClass = animateIntro ? 'navbar' : 'navbar noAnimation'
+  const [playNavFade, setPlayNavFade] = useState(false)
+  const navbarClass = animateIntro ?
+    ('navbar ' + (playNavFade ? 'navFadeIn' : 'navPreIntro')) :
+    'navbar noAnimation'
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
@@ -30,6 +30,19 @@ function Navbar({...props}) {
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
+
+  useEffect(() => {
+    if (!animateIntro) {
+      setPlayNavFade(false)
+      return
+    }
+
+    const timer = setTimeout(() => {
+      setPlayNavFade(true)
+    }, 2700)
+
+    return () => clearTimeout(timer)
+  }, [animateIntro])
 
   const standardButtonText = content.buttons.map((item) => {
     return {
@@ -66,7 +79,7 @@ function Navbar({...props}) {
 
   const getStandardButton = (title, callback) => {
     return (
-      <li className="nav-item" onClick={() => {
+      <li key={title} className="nav-item" onClick={() => {
         callback()
         closeMobileMenu()
       }}>

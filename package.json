@@ -1,5 +1,5 @@
 {
-  "homepage": "https://broliver12.github.io",
+  "homepage": "https://ostraszynski.com",
   "name": "portfolio",
   "version": "0.1.0",
   "dependencies": {
@@ -11,26 +11,25 @@
     "cli-ux": "^6.0.9",
     "gh-pages": "^6.3.0",
     "got": "^14.6.6",
+    "next": "^15.2.0",
     "phoenix": "^1.8.3",
     "prettier": "^3.8.1",
     "react": "^19.2.4",
     "react-countdown": "^2.3.6",
     "react-dom": "^19.2.4",
     "react-redux": "^9.2.0",
-    "react-router-dom": "^7.13.0",
-    "react-scripts": "^5.0.1",
     "styled-components": "^6.3.11",
     "valid-url": "^1.0.9",
     "web-vitals": "^5.1.0"
   },
   "scripts": {
-    "start": "PUBLIC_URL=\"\" react-scripts start",
-    "build": "PUBLIC_URL=\"\" react-scripts build",
-    "test": "react-scripts test",
+    "dev": "next dev",
+    "start": "next dev",
+    "build": "next build",
+    "test": "echo \"No tests configured\"",
     "lint": "npx eslint --fix \"./src/**/*.js\" && npx eslint --fix \"./src/*.js\"",
-    "eject": "react-scripts eject",
-    "predeploy": "PUBLIC_URL=\"\" && npm run build",
-    "deploy": "gh-pages -b gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d out"
   },
   "browserslist": {
     "production": [

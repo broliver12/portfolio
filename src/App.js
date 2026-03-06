@@ -1,16 +1,9 @@
-import React, {useState, useEffect} from 'react'
+'use client'
+
+import {useState, useEffect} from 'react'
 import Navbar from './components/navbar/Navbar'
-import './App.css'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate
-} from 'react-router-dom'
 import IconLoading from './icon/IconLoading'
 import reveal from './animations/ScrollListener'
-import './animations/Scroll.css'
-import './animations/Animations.css'
 import LandingSection from './page_sections/intro/LandingSection'
 import AboutSection from './page_sections/about/AboutSection'
 import WorkSection from './page_sections/work/WorkSection'
@@ -26,17 +19,26 @@ import ContactSection from './page_sections/contact/ContactSection'
 function App() {
   const [loading] = useState(false)
   const initialLoadKey = 'os_initial_tab_animation_played'
-  const [shouldAnimateLanding] = useState(() => {
-    try {
-      return sessionStorage.getItem(initialLoadKey) !== 'true'
-    } catch {
-      return true
-    }
-  })
+  const [shouldAnimateLanding, setShouldAnimateLanding] = useState(true)
+  const [landingPreferenceResolved, setLandingPreferenceResolved] = useState(
+    false
+  )
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
   useEffect(() => {
+    try {
+      setShouldAnimateLanding(sessionStorage.getItem(initialLoadKey) !== 'true')
+    } catch {
+      setShouldAnimateLanding(true)
+    } finally {
+      setLandingPreferenceResolved(true)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!landingPreferenceResolved) return
+
     /**
      * Run intro lock only once per tab session
      */
@@ -62,7 +64,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', reveal)
     }
-  }, [])
+  }, [landingPreferenceResolved, shouldAnimateLanding])
 
   return loading === true ? (
     <div className="loadingContainer">
@@ -71,22 +73,17 @@ function App() {
       </span>
     </div>
   ) : (
-    <Router basename={process.env.PUBLIC_URL}>
+    <>
       <Navbar animateIntro={shouldAnimateLanding} />
-      <Routes>
-        <Route path="/" exact element={
-          <div className="homeScreenContainer">
-            <LandingSection animateIntro={shouldAnimateLanding} />
-            <AboutSection />
-            <WorkSection />
-            <ProjectsSection />
-            <EducationSection />
-            <ContactSection />
-          </div>
-        } />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
-    </Router>
+      <div className="homeScreenContainer">
+        <LandingSection animateIntro={shouldAnimateLanding} />
+        <AboutSection />
+        <WorkSection />
+        <ProjectsSection />
+        <EducationSection />
+        <ContactSection />
+      </div>
+    </>
   )
 }
 

@@ -1,5 +1,3 @@
-import React from 'react'
-import './WorkSection.css'
 import ct from '../../content/JobContent'
 import IconCalendarMonth from '../../icon/IconCalendarMonth'
 import IconLocationOn from '../../icon/IconLocationOn'
@@ -17,12 +15,12 @@ function WorkSection() {
   return (
     <div id="experience" className="workContainer">
       <div className="workTitleBar">
-        <div>{content.title}</div>
+        <h2>{content.title}</h2>
       </div>
-      <div className="workSubtitle">
+      <p className="workSubtitle">
         From enterprise consulting to early stage startups, I&apos;ve led teams
         in building scalable, maintainable and beautiful mobile experiences.
-      </div>
+      </p>
 
       <div className="jobCardsContainer">
         {jobs.map((job, index) => (
@@ -47,8 +45,8 @@ function WorkSection() {
                       <span className="logoPlaceholder">Logo</span>}
                   </div>
                   <div className="companyMeta">
-                    <div className="companyName">{job.company}</div>
-                    <div className="jobRole">{job.title}</div>
+                    <h3 className="companyName">{job.company}</h3>
+                    <p className="jobRole">{job.title}</p>
                     {job.previously && job.previously.length > 0 ? (
                       <div className="previouslyBlock">
                         <div className="previouslyLabel">Previously:</div>

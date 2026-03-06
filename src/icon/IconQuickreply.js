@@ -1,4 +1,3 @@
-import React from 'react'
 
 /**
  * Quick Reply Icon

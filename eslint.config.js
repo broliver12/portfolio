@@ -6,7 +6,7 @@ const compat = new FlatCompat({
 
 module.exports = [
   {
-    ignores: ['build/**', 'node_modules/**'],
+    ignores: ['build/**', '.next/**', 'out/**', 'node_modules/**'],
   },
   ...compat.config({
     extends: ['plugin:react/recommended', 'google'],
@@ -38,6 +38,7 @@ module.exports = [
         },
       ],
       'react/prop-types': 'off',
+      'react/react-in-jsx-scope': 'off',
       'no-console': 'warn',
       'space-infix-ops': 'warn',
       'require-jsdoc': 'off',

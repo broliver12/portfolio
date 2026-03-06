@@ -1,5 +1,3 @@
-import React from 'react'
-import './JobTile.css'
 
 /**
  * Tile that displays Job Title & Employer Name

@@ -1,5 +1,3 @@
-import React from 'react'
-import './CardSurface.css'
 
 /**
  * Shared card wrapper with a subtle gradient overlay.

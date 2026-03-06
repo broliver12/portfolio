@@ -34,6 +34,13 @@
   margin-top: 18px;
 }
 
+.portfolioText {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
 .projectsSubtitle {
   margin-top: 10px;
   margin-bottom: 8px;

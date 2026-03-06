@@ -1,5 +1,3 @@
-import React from 'react'
-import './Socials.css'
 import IconGitHub from '../../icon/IconGithub'
 import IconLinkedIn from '../../icon/IconLinkedin'
 import li from '../../content/ExternalLinks.js'

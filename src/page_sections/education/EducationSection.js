@@ -1,5 +1,3 @@
-import React from 'react'
-import './EducationSection.css'
 import ct from '../../content/EducationContent'
 import IconCalendarMonth from '../../icon/IconCalendarMonth'
 import CardSurface from '../../components/card_surface/CardSurface'
@@ -14,8 +12,8 @@ function EducationSection() {
 
   return (
     <div id="education" className="educationSectionContainer">
-      <div className="educationTitleBar">{content.title}</div>
-      <div className="educationSubtitle">{content.subtitle}</div>
+      <h2 className="educationTitleBar">{content.title}</h2>
+      <p className="educationSubtitle">{content.subtitle}</p>
 
       <CardSurface className="educationCard reveal fade-bottom">
         <div className="educationHeader">
@@ -28,8 +26,8 @@ function EducationSection() {
               />
             </div>
             <div className="educationMeta">
-              <div className="educationSchool">{content.school}</div>
-              <div className="educationDegree">{content.degree}</div>
+              <h3 className="educationSchool">{content.school}</h3>
+              <p className="educationDegree">{content.degree}</p>
               <div className="educationPill">{content.highlight}</div>
             </div>
           </div>
@@ -41,7 +39,7 @@ function EducationSection() {
           </div>
         </div>
 
-        <div className="educationDescription">{content.description}</div>
+        <p className="educationDescription">{content.description}</p>
       </CardSurface>
     </div>
   )
