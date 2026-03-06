@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://ostraszynski.com
+Sitemap: https://ostraszynski.com/sitemap.xml
