@@ -1,5 +1,6 @@
 import {useEffect, useRef, useState} from 'react'
 import ct from '../../content/LandingContent.js'
+import {trackResumeDownload} from '../../analytics/google_analytics'
 
 /**
  * Introduction Widget
@@ -107,7 +108,12 @@ function LandingSection(props) {
       </div>
       <div
         className={ctaClass}
-        onClick={() => window.open(content.resume_url, '_blank')}>
+        onClick={() => {
+          trackResumeDownload({
+            cta_location: 'hero',
+          })
+          window.open(content.resume_url, '_blank')
+        }}>
         {content.cta}
       </div>
     </div>

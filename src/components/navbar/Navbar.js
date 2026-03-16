@@ -3,6 +3,7 @@ import '../../icon/IconLoading'
 import IconLoading from '../../icon/IconLoading'
 import li from '../../content/ExternalLinks.js'
 import ct from '../../content/NavbarContent'
+import {trackResumeDownload} from '../../analytics/google_analytics'
 
 /**
  * Top Navigation Bar & Drop down Menu
@@ -122,6 +123,9 @@ function Navbar({...props}) {
                 className="outlinedButtonComponent innerItem resumeButton"
                 onClick={() => {
                   closeMobileMenu()
+                  trackResumeDownload({
+                    cta_location: 'navbar',
+                  })
                   window.open(links.resume_url, '_blank')
                 }}
               >

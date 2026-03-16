@@ -8,6 +8,10 @@ import IconMailOutline from '../../icon/IconMailOutline'
 import IconQuickreply from '../../icon/IconQuickreply'
 import IconLocationOn from '../../icon/IconLocationOn'
 import CardSurface from '../../components/card_surface/CardSurface'
+import {
+  trackContactClick,
+  trackResumeDownload
+} from '../../analytics/google_analytics'
 
 const DownloadIcon = () => (
   <svg
@@ -92,6 +96,11 @@ function ContactSection() {
 
   const openMailClient = (event) => {
     event.preventDefault()
+    trackContactClick({
+      method: 'email',
+      cta_location: 'contact',
+      destination_url: 'mailto:' + emailAddress,
+    })
     window.location.href = 'mailto:' + emailAddress
   }
 
@@ -110,6 +119,11 @@ function ContactSection() {
       label: 'Download Resume',
       href: links.resume_url,
       download: 'oliver_straszynski_resume.pdf',
+      onClick: () => {
+        trackResumeDownload({
+          cta_location: 'contact',
+        })
+      },
       iconType: 'download',
       primary: true,
     },
@@ -126,6 +140,13 @@ function ContactSection() {
       href: links.linkedin_url,
       target: '_blank',
       rel: 'noreferrer',
+      onClick: () => {
+        trackContactClick({
+          method: 'linkedin',
+          cta_location: 'contact',
+          destination_url: links.linkedin_url,
+        })
+      },
       iconType: 'linkedin',
     },
     {
@@ -134,6 +155,13 @@ function ContactSection() {
       href: links.github_url,
       target: '_blank',
       rel: 'noreferrer',
+      onClick: () => {
+        trackContactClick({
+          method: 'github',
+          cta_location: 'contact',
+          destination_url: links.github_url,
+        })
+      },
       iconType: 'github',
     },
   ]

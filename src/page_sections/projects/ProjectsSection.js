@@ -2,6 +2,7 @@ import {useState} from 'react'
 import ProjectTile from '../../components/portfolio_tile/ProjectTile'
 import li from '../../content/ExternalLinks.js'
 import ct from '../../content/PortfolioContent.js'
+import {trackProjectClick} from '../../analytics/google_analytics'
 
 
 /**
@@ -10,7 +11,12 @@ import ct from '../../content/PortfolioContent.js'
  * @return {WorkSection}
  */
 function ProjectsSection() {
-  const openInNewTab = (url) => {
+  const openInNewTab = (url, projectName, ctaLocation) => {
+    trackProjectClick({
+      project_name: projectName,
+      cta_location: ctaLocation,
+      destination_url: url,
+    })
     window.open(url, '_blank')
   }
 
@@ -26,10 +32,18 @@ function ProjectsSection() {
           // noop
         },
         githubIconAction: () => {
-          openInNewTab(links.github_url + item.gh_ext)
+          openInNewTab(
+            links.github_url + item.gh_ext,
+            item.title,
+            'project_github_icon'
+          )
         },
         externalIconAction: () => {
-          openInNewTab(links.github_url + item.gh_ext)
+          openInNewTab(
+            links.github_url + item.gh_ext,
+            item.title,
+            'project_external_icon'
+          )
         },
       }
     }

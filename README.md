@@ -1,18 +1,18 @@
 ## Portfolio
 
-A lightweight React site that works as a modular & scalable personal portfolio.
+A lightweight, SEO optimized personal portfolio built with Next.js and deployed as static
+assets.
+
+## Technology
+
+- Next.js
+- React
+- Vanilla CSS
+- GitHub Pages deployment via `gh-pages` branch
 
 ## Design
 
-Design inspired by @BrittanyChiang's [Portfolio V4](https://github.com/bchiang7/v4).
-
 All components & animations were created from scratch using React, CSS, Figma.
-
-## TODO
-
-1. Make this repository a template that's extremely intuitive to download and setup for a first time react user.
-
-2. Add fun themes, additional decoration & explore the limits of CSS.
 
 ## License
 

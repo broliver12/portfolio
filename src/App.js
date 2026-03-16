@@ -1,6 +1,6 @@
 'use client'
 
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import Navbar from './components/navbar/Navbar'
 import IconLoading from './icon/IconLoading'
 import reveal from './animations/ScrollListener'
@@ -10,6 +10,7 @@ import WorkSection from './page_sections/work/WorkSection'
 import EducationSection from './page_sections/education/EducationSection'
 import ProjectsSection from './page_sections/projects/ProjectsSection'
 import ContactSection from './page_sections/contact/ContactSection'
+import {trackSectionView} from './analytics/google_analytics'
 
 /**
  * Main App widget
@@ -23,6 +24,7 @@ function App() {
   const [landingPreferenceResolved, setLandingPreferenceResolved] = useState(
     false
   )
+  const seenSectionsRef = useRef(new Set())
 
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
@@ -65,6 +67,42 @@ function App() {
       window.removeEventListener('scroll', reveal)
     }
   }, [landingPreferenceResolved, shouldAnimateLanding])
+
+  useEffect(() => {
+    const sections = [
+      {id: 'intro', name: 'intro'},
+      {id: 'about', name: 'about'},
+      {id: 'experience', name: 'experience'},
+      {id: 'projects', name: 'projects'},
+      {id: 'education', name: 'education'},
+      {id: 'contact', name: 'contact'},
+    ]
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+
+          const sectionName = entry.target.getAttribute('data-section-name')
+          if (!sectionName || seenSectionsRef.current.has(sectionName)) return
+
+          seenSectionsRef.current.add(sectionName)
+          trackSectionView(sectionName)
+        })
+      },
+      {threshold: 0.55}
+    )
+
+    sections.forEach(({id, name}) => {
+      const element = document.getElementById(id)
+      if (!element) return
+
+      element.setAttribute('data-section-name', name)
+      observer.observe(element)
+    })
+
+    return () => observer.disconnect()
+  }, [])
 
   return loading === true ? (
     <div className="loadingContainer">
