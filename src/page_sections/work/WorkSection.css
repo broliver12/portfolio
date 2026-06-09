@@ -168,6 +168,19 @@
   flex-shrink: 0;
 }
 
+.leagueFrame {
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #230d53;
+  border: 1px solid var(--os-primary-light-transparent);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
 .companyLogo {
   width: 100%;
   height: 100%;

@@ -2,6 +2,25 @@ const jobContent = () => {
   return {
     'title': 'Professional Experience',
     'jobs': [{
+      'company': 'League Inc',
+      'title': 'Software Developer (Android)',
+      'description': [
+        {
+          'body': 'Kotlin developer working on League\'s platform SDK, impacting millions of users across dozens of benefits and insurance apps.',
+        },
+        {
+          'body': 'Built a Live Chat interface for connecting healthcare providers to users via League\'s AI Agents or customized client solutions.',
+        },
+      ],
+      'start': '01/04/26',
+      'end': 'Present',
+      'stack': ['Android', 'Kotlin', 'SDK', 'AI Agents', 'Healthcare', 'Insurance'],
+      'location': 'Ottawa',
+      'companyUrl': 'https://league.com',
+      'logo': '/img/league_inc.jpeg',
+      'bgClass': 'leagueDecoration',
+    },
+    {
       'company': 'Flex Artificial Intelligence',
       'title': 'Senior Android Engineer',
       'description': [
@@ -19,7 +38,7 @@ const jobContent = () => {
         },
       ],
       'start': '01/01/24',
-      'end': 'Present',
+      'end': '31/03/26',
       'stack': ['Android', 'Kotlin', 'Jetpack Compose', 'Team Leadership', 'Management', 'LiteRT', 'Firebase', 'Flow', 'Coroutines', 'Bitrise'],
       'location': 'Ottawa (Remote)',
       'companyUrl': 'https://flexfitnessapp.com',

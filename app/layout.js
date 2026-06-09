@@ -55,19 +55,20 @@ const jsonLd = {
       'knowsAbout': [
         'Android',
         'Kotlin',
+        'Platform SDKs',
         'Jetpack Compose',
         'Mobile Architecture',
         'AI-assisted Development',
       ],
       'worksFor': {
-        '@id': `${siteUrl}/#organization-flex-ai`,
+        '@id': `${siteUrl}/#organization-league`,
       },
     },
     {
       '@type': 'Organization',
-      '@id': `${siteUrl}/#organization-flex-ai`,
-      'name': 'Flex Artificial Intelligence',
-      'url': 'https://flexfitnessapp.com/',
+      '@id': `${siteUrl}/#organization-league`,
+      'name': 'League Inc',
+      'url': 'https://league.com/',
     },
   ],
 }

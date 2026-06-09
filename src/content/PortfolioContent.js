@@ -2,6 +2,13 @@ const portfolioContent = () => {
   return {
     'projects': [
       {
+        'title': 'Screen Scaffold',
+        'description':
+                    'A lightweight, reusable screen wrapper for jetpack compose apps',
+        'skills': ['Compose', 'SDK', 'Android', 'Kotlin'],
+        'gh_ext': 'screen-scaffold'
+      },
+      {
         'title': 'Iris',
         'description':
                     'Android app for designers & creatives. Users can select (or capture) an image, zoom in down to the pixel level, and store their favorite color samples.',
@@ -9,17 +16,17 @@ const portfolioContent = () => {
         'gh_ext': 'iris'
       },
       {
+        'title': 'Portfolio V1',
+        'description': 'This website! A lightweight portfolio project.',
+        'skills': ['React', 'Javscript', 'Next.js', 'Node'],
+        'gh_ext': 'portfolio'
+      },
+      {
         'title': 'NFTools',
         'description':
                     'Collection of utility files for batch editing .json & .png files. Automation for every step of the NFT image generation & metadata creation proccess.',
         'skills': ['Javascript', 'Node'],
         'gh_ext': 'nftools'
-      },
-      {
-        'title': 'Portfolio V1',
-        'description': 'This website! A lightweight portfolio project.',
-        'skills': ['React', 'Javscript', 'Next.js', 'Node'],
-        'gh_ext': 'portfolio'
       },
       {
         'title': 'Raytracer',
