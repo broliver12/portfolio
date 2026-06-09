@@ -35,7 +35,7 @@ function WorkSection() {
             >
               <div className="jobHeader">
                 <div className="jobCompanyBlock">
-                  <div className={index == 0 ? "leagueFrame" : "logoFrame"}>
+                  <div className={index == 0 ? 'leagueFrame' : 'logoFrame'}>
                     {job.logo ?
                       <img
                         className="companyLogo"
