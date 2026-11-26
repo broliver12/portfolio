@@ -10,7 +10,7 @@ function AboutSection() {
 
   return (
     <div id="about">
-      <div className="aboutSectionContainer reveal fade-left">
+      <div className="aboutSectionContainer">
         <h2 className="srOnly">About</h2>
         <div className="aboutSectionText">
           <p className="aboutSectionBody">{content.paragraph_one}</p>

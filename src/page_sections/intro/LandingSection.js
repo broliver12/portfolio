@@ -101,21 +101,29 @@ function LandingSection(props) {
       </h2>
       <div className={descClass}>
         {content.paragraph_section_1}
-        <l className="employerLabel" onClick={() =>{
-          window.open('https://flexfitnessapp.com/', '_blank')
-        }}>{content.employer}</l>
+        <a
+          className="employerLabel"
+          href="https://www.ford.com/technology/ford-digital-experience"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {content.employer}
+        </a>
         {content.paragraph_section_2}
       </div>
-      <div
+      <a
         className={ctaClass}
+        href={'/' + content.resume_url}
+        target="_blank"
+        rel="noreferrer"
         onClick={() => {
           trackResumeDownload({
             cta_location: 'hero',
           })
-          window.open(content.resume_url, '_blank')
-        }}>
+        }}
+      >
         {content.cta}
-      </div>
+      </a>
     </div>
   </div>
   )

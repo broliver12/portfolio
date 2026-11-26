@@ -2,6 +2,27 @@ const jobContent = () => {
   return {
     'title': 'Professional Experience',
     'jobs': [{
+      'company': 'Ford Motor Company (via TekSystems)',
+      'title': 'Software Developer',
+      'description': [
+        {
+          'body': 'Developing keyless-entry and driving features for current and next-generation production vehicles.',
+        },
+        {
+          'body': 'Refactoring legacy features to eliminate bugs, elevate the user experience, and achieve complete unit-test coverage.',
+        },
+        {
+          'body': 'Leveraging modern software architecture and agentic AI workflows to ship new features rapidly without compromising automotive security or system stability.',
+        },
+      ],
+      'start': '06/07/26',
+      'end': 'Present',
+      'stack': ['Automotive', 'Keyless Entry', 'Driving Features', 'Software Architecture', 'Agentic AI', 'Unit Testing'],
+      'location': 'Ottawa',
+      'companyUrl': 'https://www.ford.com/technology/ford-digital-experience',
+      'logo': '/img/ford.jpg',
+    },
+    {
       'company': 'League Inc',
       'title': 'Software Developer (Android)',
       'description': [
@@ -12,8 +33,8 @@ const jobContent = () => {
           'body': 'Built a Live Chat interface for connecting healthcare providers to users via League\'s AI Agents or customized client solutions.',
         },
       ],
-      'start': '01/04/26',
-      'end': 'Present',
+      'start': '06/04/26',
+      'end': '03/07/26',
       'stack': ['Android', 'Kotlin', 'SDK', 'AI Agents', 'Healthcare', 'Insurance'],
       'location': 'Ottawa',
       'companyUrl': 'https://league.com',

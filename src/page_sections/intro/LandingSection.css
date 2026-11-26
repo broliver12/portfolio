@@ -127,6 +127,7 @@
 .employerLabel {
   padding-left: 5px;
   color: var(--os-accent-primary);
+  text-decoration: none;
 }
 
 .employerLabel:hover {
